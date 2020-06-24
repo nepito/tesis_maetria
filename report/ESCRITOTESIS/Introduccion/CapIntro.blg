@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: CapIntro.aux
+The style file: jtbnew.bst
+Database file #1: ../bibliografia2.bib
+Warning--empty title in Alex2005
+Warning--empty title in Bunz2006
+Warning--empty title in Cao2001
+Warning--empty title in Cao2002
+Warning--empty title in Ciup2010
+Warning--empty title in Cund1993
+Warning--empty title in Dang2012
+Warning--empty title in Dang2011
+Warning--empty title in Dolg1989
+Warning--empty title in Grim2003
+Warning--empty title in Hern2005
+Warning--empty title in Jesk1985
+Warning--empty title in Kuta2010
+Warning--empty title in Ohta1993
+Warning--empty title in Rao1989
+Warning--empty title in Sain2000
+Warning--empty title in Dunn1989
+Warning--empty title in Vill2009
+Warning--empty title in Yang2005
+You've used 20 entries,
+            2771 wiz_defined-function locations,
+            710 strings with 5975 characters,
+and the built_in function-call counts, 11707 in all, are:
+= -- 911
+> -- 480
+< -- 13
++ -- 185
+- -- 165
+* -- 974
+:= -- 1835
+add.period$ -- 41
+call.type$ -- 20
+change.case$ -- 136
+chr.to.int$ -- 20
+cite$ -- 39
+duplicate$ -- 903
+empty$ -- 882
+format.name$ -- 231
+if$ -- 2256
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 195
+newline$ -- 89
+num.names$ -- 80
+pop$ -- 438
+preamble$ -- 1
+purify$ -- 135
+quote$ -- 0
+skip$ -- 266
+stack$ -- 0
+substring$ -- 442
+swap$ -- 464
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 177
+warning$ -- 19
+while$ -- 79
+width$ -- 0
+write$ -- 229
+(There were 19 warnings)

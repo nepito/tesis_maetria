@@ -1,0 +1,123 @@
+%Informaci\'on de Levine. Qu\'imica Cuantica 2001 15.22
+% A causa del momento dipolar adicional inducido por el campo de
+% reacci\'on del disolvente, una mol\'ecula polar tendr\'a un momento
+% dipolar mayor en un disolvente polar que en fase gaseosa ?`ocurre
+% esto con las mol\'eculas de agua con las que trabajo? ?`Qu\'e 
+% efecto tendr\'a el momento dipolar en las distancias y las 
+% energ\'ias de hidrataci\'on?
+% ?`C\'omo cambia la el momento el\'ectrico dipolar medio en una 
+% simulaci\'on monte-carlo cuando se toma en cuenta los efectos del
+% bulto y cuando no son tomados?
+
+La v\'ia rigurosa para tratar los efectos del disolvente sobre las
+propiedades moleculares es llevar a cabo c\'alculos mecanocu\'anticos
+en sistemas que constan de una mol\'ecula de soluto redeada de muchas
+mol\'eculas de disolvente, y tomar un adecuado promedio sobre las 
+orientaciones para obtener propiedades promedio a una temperatura y
+presi\'on particulares. Un c\'alculo de este tipo es, usualmente,
+impracticable.
+
+La mec\'anica cu\'antica del estado estacionario de una mol\'ecula
+aislada es adecuada para el c\'alculo de las propiedades de la 
+mol\'ecula en fase gaseosa que no se encuentre a una presi\'on 
+elevada. Sin embargo, la mayor parte de la qu\'imica y la 
+bioqu\'imica tiene lugar en disoluci\'on, y el disolvente puede 
+tener un efecto mayor en la posici\'on de equilibrio qu\'imico y las
+velocidades de reacci\'on. 
+
+En una disoluci\'on diluida de una mol\'ecula polar de un soluto M en
+un disolvente polar S, las mol\'eculas del solvente tender\'an a 
+estar orientadas con sus \'atomos cargados positivamente dirigido al
+los \'atomos del soluto M cargados negativamente, mientras las 
+mol\'eculas del solvente tender\'an a estar orientadas con sus 
+\'atomos cargados negativamente dirigidos a los \'atomos cargados 
+positivamente del soluto S. Adem\'as, el momento dipolar de la 
+mol\'ecula del soluto inducir\'a un momento dipolar en las 
+proximidades de cada mol\'ecula del disolvente que a\~nade un momento
+dipolar permanente. El resultados neto de estos efectos de 
+orientaci\'on e inducci\'on es que el disolvente adquiere una 
+polarizaci\'on global en la regi\'on de cada mol\'ecua del soluto. El
+disolvente polarizado genera un campo el\'ectrico, llamado campo de
+reacci\'on, para cada mol\'ecula de soluto. El campo de reacci\'on
+distorciona la funci\'on de onda molecular del soluto con respecto a
+la correspondiente en fase gaseosa, produciendo, por tanto, un 
+momento dipolar inducido que se suma al momento dipolar permanente en
+la fase gaseosa M. El momento dipolar aumentado de M polariza 
+posteriormente al disolvente; y as\'i sucesivamente.
+
+La funci\'on de onda molecular y todas las propiedades moleculares en
+disoluci\'on diferir\'an en alguna extensi\'on de sus 
+correspondientes e fase gaseosa. ({\it ?`C\'omo puedo ver esto en mis
+resultados?})
+
+La via rigurosa para tratar los efectos del disolvente sobre las 
+propiedades moleculares es llevar a cabo c\'alculos mec\'anico 
+cu\'anticos en sistemas que constan de una mol\'ecula de soluto 
+rodeada de muchas mol\'eculas de disolvente, y tomar un adecuado 
+promedio de las orientaciones para obtener las propiedades promedios
+a una presi\'on y temperatura particulares. 
+
+%TomasiChemRev1994.94.2027.pdf
+Un apropiado entendimiento del fen\'omeno de reacciones qu\'imicas en 
+soluci\'on es la finalidad \'ultima de los estudio te\'oricos en ese
+campo; modelos y t\'ecnicas computacionales deber\'ian permitir la
+predicci\'on de tasas, los mecanismos y otras caracter\'isticas de 
+los procesos espec\'ificos que ocurren en soluci\'on. Estos objetivos
+requieren la evaluaci\'on de muchas propiedades fisicoqu\'imicas, 
+tanto de caracter local y macrosc\'opicas.
+
+\paragraph{Clasificaci\'on ``old style''} La clasificaci\'on 
+vieja de los modelos continuos es la siguiente: (a) m\'etodos basados
+en la elaboraci\'on de funciones f\'isicas, (b) m\'etodos basados en 
+la simulaci\'on en computadoras de l\'iquidos, (c) los m\'etodos de
+modelos continuos electrost\'aticos y (d) los que hacen una 
+decripci\'on de macromol\'ecula de la soluci\'on. 
+
+\paragraph{Desarrollo hist\'orico} Los modelos continuos tienen su 
+propio origen en consideraciones f\'isicas simples. La atenci\'on ha
+sido puesta  desde el inicio en la descripci\'on microsc\'opica de 
+una componenete del sistema (es decir, el soluto M). La expresi\'on
+dada por Born \citep{Born19} y Bell \citep{Bell20}, para la energ\'ia
+de interacci\'on cl\'asica de un soluto simple M con un medio 
+representado como un continuo diel\'ectrico, fue formalmente 
+extendido por Kirkwood \citep{Kirk21} en 1934 para descripci\'on
+cu\'antica de M, sin l\'imites en la complejidad del sistema. La
+contribuci\'on decisiva de Onsager \citep{Onsa22} en 1936 fue la que
+proporcion\'o una herramienta interpretativa, usado por 
+qu\'imicos por muchos a\~nos: la simplicidad de las expresiones 
+formales exitosamente elaboradas estimul\'o la aplicaci\'on del 
+efecto efecto de varios solventes.
+
+% La formal derivaci\'on del modelo est\'a basado en el uso de las
+% t\'ecnicas de partici\'on  y promedio de aplicaci\'on general en 
+% mec\'anica molecular. El lector puede encontrar presentaciones
+% formales detalladas en los art\'iculos de \'Angy\'an \citep{Angy81}
+% y de Tapia \citep{Tapi82}: este \'ultimo completa una serie de
+% procedimientos, menos detallados, formulaciones m\'as transparentes
+% para los lectores no especializados {63, 83, 84}.
+
+\paragraph{Modelo Cu\'antico}
+El modelo continuo b\'asico involucra una forma simplificada de la
+interacci\'on potencial; $\hat V_{int}$ es reducido a su componente
+electrost\'atica cl\'asica, y $g_s$ describe un continuo isotr\'opico
+lineal, caracterizado por la constante diel\'ectrica cl\'asica 
+$\epsilon$ del bulto del solvente, la cual depende de la temperatura 
+$T$. Se usar\'a el s\'imbolo $hat V_{\sigma}$ en lugar de 
+$\hat V_{int}$, cuando solo los efectos de polarizaci\'on 
+electrost\'atica ser\'an considerados:
+$$\hat V_{int}=\hat V_{\sigma}(\vec r,\vec Q,\rho_M,\epsilon)=
+\sum_{\alpha}Z_{\alpha}\Phi_{\alpha}(\vec Q_{\alpha})-\sum_i
+\Phi_{\sigma}(\vec q_i),$$
+donde $\vec Q_{\alpha}$ son las coordenadas de los nucleos y 
+$\vec q_i$ son las coordenadas de los electrones. Aqu\'i 
+$\Phi_{\sigma}(\vec r)$ es el valor del campo electrost\'atico 
+generado por el diel\'ectrico polarizado en la posici\'on $vec r$. La
+contribuci\'on de la interacci\'on soluto-solvente a la energ\'ia 
+total $E^{(f)}$ es dada por la integral
+$$W_{MS}=\int \Psi^{(f)*}\hat V_{\sigma}\Psi^{(f)}d\vec q_1...
+d\vec q_{N_{el}}=\int\rho_M(\vec r)\Phi_{\sigma}(\vec r)dr^3$$
+$\hat V_{\sigma}$ es un operador monoelectr\'onico, y la evaluaci\'on
+$W_{MS}$ solo es un paso en el c\'alculo. El problema cu\'antico es
+tratado m\'as o menos en las t\'ecnicas est\'andar. El m\'as 
+frecuente m\'etodo usado es Hertree-Fock, en este caso 
+$\hat V_{\sigma}$ es simplemente agregado el operador de Fock.

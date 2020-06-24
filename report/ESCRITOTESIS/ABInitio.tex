@@ -1,0 +1,59 @@
+\section*{AB Initio}
+% Esto es una traducción de la primera parte del capítulo sexto del
+% libro "Essential Computer Chemestry" de Carter.
+La suposici\'on fundamental de la teor\'ia Hartree-Fock, que cada 
+electr\'on ve a todos los otros como un campo promedio, permite un
+tremendo progreso ser hecho en hacer los c\'alculos de orbitales
+moleculares (OM). Sin embargo, ignorar la correlaci\'on electr\'onica
+tiene profundas consecuencias qu\'imicas cuanto esto viene a 
+determinar funciones de ondas precisas y propiedades derivadas de 
+ellas. La construcci\'on de teor\'ias semiemp\'iricas fue motivada en
+parte por la esperanza de esfurzos en parametrizaciones juiciosas
+podr\'ian compensar esta caracteristica de la teor\'ia HF. Mientras
+tales compensaciones no tienen fundamentos rigurosos, para extender
+esto nos permite hacer predicciones qu\'imicas precisas, esto puede
+tener gran utilidad pr\'actica.
+
+Los primeros constructores de la as\'i llamada teor\'ia HF {\it ab 
+initio} (del lat\'in desde el principio), tendi\'o a ser menos 
+enfocada en hacer predicciones de t\'erminos pequ\~nos, y m\'as 
+enfocada en t\'erminos largos contrucci\'on de una metodolog\'ia
+rigurosa que ser\'ia importante esperar (una tensi\'on din\'amica
+entre la necesidad de hacer predicciones ahora y la necesidad de hacer
+mejores predicciones ma\~nana es parecidamente por caraterizar la 
+qu\'imica computacional en el futuro). Por supuesto, el rigor 
+fundamental es la ecuaci\'on de Schr\"odinger, pero tal ecuaci\'on es
+insoluble en una esencia pr\'actica para la mayor\'ia de los sistemas
+simples. As\'i, la teor\'ia HF, a pesar de sus fallas en las 
+suposiciones fundamentales, fue adoptada como \'util en la 
+filosof\'ia {\it ab initio} porque proporciona un muy bien definida 
+piedra de paso en el camino a teor\'ias m\'as sofisticadas (por 
+ejemplo, teor\'ias que se acercan m\'as a la soluci\'on exacta de la
+ecuaci\'on de Schr\"odinger). Un enorme cantidad de esfuerzos 
+hab\'ian sido gastados en la construcci\'on matem\'atica y t\'ecnica 
+computacionales para extender el l\'imite HF, lo cual es decir 
+resolver las ecuaciones HF con la equivalente  de un conjunto de base 
+infinito, sin aproximaci\'on adisional. Si el l\'imite HF es logrado,
+entonces el error asociado a la energ\'ia de la aproximaci\'on HF del
+sistema dado, el as\'i llamado energ\'ia de correlaci\'on 
+electr\'onica, puede ser deteminada como
+$$E_{corr}=E-E_{HF},$$
+donde $E$ es la energ\'ia ``verdadera'' y $E_{HF}$ es la energ\'ia del 
+sistema en el l\'imite HF.
+
+HF lo largo del camino esto se volvi\'o claro que, tal vez 
+sorpresivamente,  las energ\'ia HF qu\'imicamente \'utilies. 
+T\'ipicamente su utilidad fue manifiesta para situaciones donde el 
+error asociado con la ignorancia de la energ\'ia de correlaci\'on 
+pod\'ia no ser importante en virtud de comparar dos o m\'as sistemas
+para los cuales el error pod\'ia cancelarse. La t\'ecnica de usar las
+ecuaciones isodesmicas representa un ejemplo de como tal 
+comparaci\'on puede ser exitosamente hecha.
+
+La disponibilidad de las funciones de onda HF hace posible la prueba
+de que tan \'util tales funciones pueden ser para la predicci\'on de 
+otras adem\'as de la energ\'ia. Simplemente porque las funciones de 
+onda HF pueden ser arbitrariamente lejos de ser una eigenfinci\'on 
+del hamiltoniano no implide {\it a priori} de estar razonablemente
+cerca de otra eigenfunci\'on de alg\'un otro operador mec\'anico 
+cu\'antico.

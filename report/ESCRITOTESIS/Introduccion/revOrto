@@ -1,0 +1,3 @@
+./ori2isp $1
+aspell -t check aux.$1
+./isp2ori $1

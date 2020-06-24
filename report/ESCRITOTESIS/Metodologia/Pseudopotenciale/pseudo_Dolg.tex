@@ -1,0 +1,98 @@
+\subsection{Pseudopotenciales}
+%DolgChemRev2012.112.403
+%\paragraph{Electrones de valencia y de carozo}
+Los conceptos de valencia y electrones de carozo son familiares para
+todo qu\'imico y fundamental, por ejemplo, para el ordenamiento de 
+los elementos en la tabla peri\'odica. Para muchas consideraciones
+cualitativas la qu\'imica de un elemento es solo determinada por sus
+electrones de valencia, los cuales participan activamente en los 
+enlaces qu\'imicos. En esta descripci\'on los electrones de carozo 
+permanecen esencialmente sin participaci\'on y a lo m\'as juegan un 
+rol indirecto, por ejemplo, proporcionando junto con el n\'ucleo un 
+potencial efectivo modificado para los electrones de valencia dentro
+de un grupo de la tabla peri\'odica. Las modificaciones en los 
+potencial efectivo no solo llevan a diferencias cuantitativas para 
+los \'atomos, por ejemplo, en los potenciales de ionizaci\'on, 
+afinidad electr\'onica y energ\'ias de excitaci\'on, sino tambi\'en 
+para mol\'eculas, por ejemplo, las fuerzas en los enlaces qu\'imicos 
+formados por estos \'atomos, y as\'i afectando su comportamiento 
+qu\'imico \citep{Dolg2012}.
+
+%\paragraph{Potenciales Efectivos de Carozo}
+El m\'etodo de potenciales efectivos de carozo (ECPs, por sus siglas 
+en ingl\'es) hace uso de estas ideas en los c\'alculos te\'oricos de 
+la estructura electr\'onica a primeros principios. Las principales 
+finalidades son una considerable reducci\'on del esfuerzo 
+computacional evitando el costoso tratamiento expl\'icito de los 
+carozos at\'omicos en los c\'alculos y al mismo tiempo un tratamiento
+impl\'icito de la mayor\'ia de los efectos relativistas para el 
+sistema de electrones de valencia. La eliminaci\'on de los carozos
+at\'omicos de los c\'alculos permite tratar todos los elementos de un
+grupo de la tabla peri\'odica de igual manera. Ya que el mismo 
+n\'umero de electrones de valencia deben de ser tratados para todos
+los elementos de una columna de la tabla peri\'odica, se espera que
+el mismo esfuerzo computacional y una precisi\'on similar sea lograda,
+es decir, la variaci\'on en la calidad de los resultados causada por la 
+gran diferencia en el tama\~no de los sistemas es evitada. 
+Claramente, tal expectaci\'on descansa en la suposici\'on discutible 
+de que el formalismo de los ECPs trabaja igualmente bien para todos los 
+elementos de un grupo de la tabla peri\'odica. 
+
+%\paragraph{Efectos Relativistas}
+Los efectos relativistas para los elementos pesados no pueden ser 
+ignorados ya que provocan cambios cuantitativos e incluso a veces 
+cualitativa a la precisi\'on de la investigaci\'on. Estas
+contribuciones relativistas requieren un esfuerzo computacional 
+adicional a en c\'alculos de todos los electrones (AE, por sus siglas
+en ingl\'es). Dentro de la descripci\'on ECP ellas son usualmente 
+incluidas por medio de una simple parametrizaci\'on del hamiltoniano 
+modelo solo de valencia elegido con respecto a datos de referencia 
+relativistas de AE. La descripci\'on ECP escalar relativista puede 
+hacer uso de toda la maquinaria sin cambio de la qu\'imica cu\'antica
+no-relativista cuando los efectos esp\'in-\'orbita pueden ser 
+ignorados, sin embargo logrando resultados comparables a aquellos 
+c\'alculos de mayor costo, escalar relativista de AE. Los efectos SO 
+pueden ser tomados en cuenta en una descripci\'on ECP usando varias 
+estrategias, por ejemplo, un tratamiento perturbativo subsecuentes a
+los c\'alculos escalares relativistas, esto es, como el \'ultimo paso
+del c\'alculo, o para su rigurosa inclusi\'on variacional desde el 
+comienzo de los c\'alculos. Que los ECPs se vuelven un caballo de 
+batalla de la qu\'imica cu\'antica relativista no es sorprendente, 
+esto se debe que los resultados obtenidos en la mayor\'ia de las 
+investigaciones de problemas qu\'imicos por los modernos esquemas ECP
+son tan precisos como aquellos obtenidos de los m\'as costosos, y
+tambi\'en aproximados c\'alculos relativistas AE, por lo que producen
+m\'as resultados que ning\'un otro m\'etodo relativista. 
+
+%\paragraph{Nomenclatura de potenciales efectivos de carozo}
+Los potenciales modelos intentan construir potenciales efectivos
+anal\'iticos modelando directamente el potencial HF no local original
+para los electrones en orbitales de valencia los cuales tienen la 
+estructura nodal completa de los orbitales de valencia AE. Esto se
+logra haciendo uso de la ecuaci\'on de Huzinaga-Cantu y ser\'a 
+referida como una descripci\'on de potenciales modelos HF (MP). 
+Hay otro m\'etodo para la descripci\'on de Pseudopotenciales que 
+modelan el potencial no local HF usando orbitales de pseudovalencia, 
+esto es, orbitales que despu\'es de una transformaci\'on aun den las 
+energ\'ias orbitales correctas, pero tienen una estructura nodal 
+radial simplificada. Este m\'etodo se basa en la ecuaci\'on de 
+Phillips-Kleinman y ser\'a referido como la descripci\'on de 
+pseudopotenciales modelos HF (PP).
+
+%\paragraph{Aproximaciones Pr\'acticas}%pag 417
+Algunas aproximaciones deben de ser hechas para lograr un esquema 
+pr\'actico computacionalmente de los c\'alculos de Orbitales de 
+Valencia. Primero se deben de separar los sistemas en electrones de 
+valencia y los de carozo. Segundo, se debe suponer que los carozos 
+at\'omicos est\'an inertes y se mantienen sin cambio cuando van de un
+sistema a otro. Tercero, para eliminar los electrones de carozo y 
+posiblemente tambi\'en los orbitales internos de los c\'alculos se 
+debe reemplazar su contribuci\'on en un hamiltoniano de AE a los 
+electrones de valencia por un potencial efectivo de carozo modelando 
+el potencial HF no local real. Y cuarto, los m\'etodo ECP casi 
+siempre asumen que los carozos at\'omicos no interaccionan con los 
+carozos de otros \'atomos excepto por su repulsi\'on coulombiana.
+
+{\normalsize
+\input{../Metodologia/Bases/Yang.tex}}
+

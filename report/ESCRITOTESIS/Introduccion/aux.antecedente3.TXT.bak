@@ -1,0 +1,232 @@
+\section{Antecedentes}
+%\parr{1}{?`Cómo surgió la idea del estudio?}
+%KutaInorgChem2010.49.7808
+El interés de los científicos por lantánidos ha crecido en las
+útlimas cinco décadas en diferentes ramas de la ciencia y la 
+tecnología. Los lantánidos son usados, por químicos médico
+y bioquímicos, como agentes de contraste (MRI) y en la creación 
+de nuevos reactivos biomédicos para probar ``rutas'' metabólicas.
+La ciencia de materiales impulsó el desarrollo de sólidos 
+magneto-óptico, cerámicas, etc. que contiene lantánidos. La
+industría hace uso de los lantánidos por su fuerte activación
+en la catálisis de la polimerización de olefinas, en los
+compuestos de lantánidos complejos y organometálicos, entre otros
+usos. La industría automotriz de carros híbridos requiere grandes
+cantidades de lantánidos en la fabricación de los motores 
+eléctricos (neodiomio, terbio y disprocio) y en las baterias de los
+carros (lantano); además, los lantánidos son necesarios en carros
+con asientos y ventanas eléctricas. Una aleación de lantánidos 
+es utilizada en la creación de imanes de alta resistencia que se 
+utilizan en la industría de electrónicos que producen sonidos o 
+que tienen pequeños moteres dentro. Este interés tegnológico a
+provocado problemas políticos: a principios de la segunda
+década del siglo 21, Estados Unidos, la Unión Europea y Japón 
+presentaron una denuncia contra China por las limitaciones en el 
+suministro de lantánidos, pues elevaría los costos de 
+producción \citep{Ciup2010,Kuta2010,Jesk1985,Rao1989}.
+
+Por otra parte, el interés en los lantánidos también a surgido
+desde un punto de vista ecológico. Los lantánidos sirven de 
+contaminantes trazas (en química ambiental). También el uso de
+energía nuclear provocó el estudio de los lantánidos, ya que 
+éstos son parte de los productos de fisión en el ciclo de 
+combustión. 
+%El estado termodinámicamente más estable de 
+%lantánidos en solución es $3+$; además, ya que los estudios 
+%teórico de los lantánidos en solución acuosa ayudan a la 
+%comprención de la química del proceso de separación 
+%lantánidos-actínidos, productos en la basura nuclear, éste 
+%justifica el estudios teóricos de la hidratación de lantánidos 
+%trivalentes. 
+El estado termodinámicamente más estable de los
+lantánidos en solución es $3+$;  y como los estudios 
+teórico ayudan a la comprención de la química del proceso de 
+separación lantánidos-actínidos, productos en la basura 
+nuclear, esto es una justificación del estudio teóricos de la 
+hidratación de lantánidos trivalentes. 
+Además de lo antes mencionado, el estudio de la 
+hidratación de lantánidos puede ayudar a desarrollar una 
+metodología teórica ``confiable'' para el estudio de los 
+actínidos, ésto se basa en el supuesto que se podrá tener un
+tratamiento similar por ser series de elementos que van llenando una 
+capa electrónica interna f de electrones, 4f en el caso de los 
+lantánidos y 5f los actínidos. El interés surge por la falta de
+datos experimentales, debida a la radioactividad de los actínidos
+\citep{Ciup2010,Kuta2010,Bunz2006}.
+
+
+%\parr{4}{Estado de la cuestión}
+Las mejoras en las técnicas experimentales y el desarrollo de 
+modelos teóricos más sofisticados y realizables permitieron un 
+creciente número de estudios en los últimos diez años, tanto 
+experimentales como teóricos, para obtener un mejor entendimiento 
+de las propiedades de hidratación de iones de los lantánidos 
+\citep{Dang2012}. Las discrepancias entre los datos experimentales
+y los teóricos son otro motivo para llevar a cabo una cuidadosa 
+investigación de las propiedades termodinámicas y de las 
+estructuras geométricas de la hidratación de toda la serie, aún 
+cuando es generalmente aceptado que existen muchas similitudes entre
+todos los elementos trivalentes de la serie.
+
+El estudio téorico de la hidratación de lantánidos tiene 
+algunos problemas provocados, por ejemplo, por el gran número de
+orbitales y electrónes, y la importancia de los efectos de 
+correlación y relativistas que están presentes en los 
+lantánidos. Los potenciales atómicos son un punto de partida en 
+la predicción de propiedades moleculares, cuyos parámetros pueden
+ser ajustados a cálculos {\it ab initio} de alta calidad. Para 
+mejorar la precisión de los modelos en la reproducción de los 
+datos experimentales puede ser necesario cambiar las formas 
+funcionales del potencial por unas que sean más fieles a la 
+descripción molecular, pero también es posible lograrlo mediante
+una mayor calidad de los datos {\it ab initio}. Por
+lo anterior, el estudio de la hidratación de lantánidos con 
+diferentes niveles de cálculo {\it ab initio} dará información
+de la metodología necesaria para obtener los datos a los que se
+ajustarán los parámetros de los modelos utilizados en
+simulaciones moleculares 	\citep{Cund1993,Sadu1999,Hern2005}.
+
+\subsection{Trabajos Experimentales}
+%\parr{5}{Introducción al Trabajo Experimental}
+Se han empleado varios métodos espectroscópicos en el estudio de
+hidratación iónica. La espectroscopía por absorción de rayos 
+X (XAS, por sus siglas en ingl\' es) ha permitido determinar, con 
+alta presición, las características de la estructura de 
+hidratación. En particular, la estrcuctura fina por absorción 
+extendida de rayos X (EXAFS, por sus siglas en inglés) tiene una 
+gran ventaja sobre los métodos usales de difracción de rayos X 
+debido a su alta selectividad del elemento central, el átomo 
+absorbente, la estructura alrededor del él puede ser determinada
+\citep{Ohta1993}. Sin embargo, para determinar la información 
+estructural, a partir de los datos experimentales de EXAFS, es 
+necesario el uso de un modelo que puede ser obtenido de simulaciones 
+de dinámica molecular \citep{Dang2011}. 
+
+%\paragraph{Pár.:7 Mezcla de técnicas}
+\cite{Dang2011} desarrollaron y aplicaron, en la investigación de
+soluciones acuosas de lantánidos, un método para analizar 
+el espectro EXAFS de sistemas líquidos ajustando funciones de 
+distribución radial, $g(r)$, obtenidas de simulaciones de 
+dinámica molecular. Esta metodología combinada permite la prueba 
+y validación de las funciones de distribución radial obtenidas de
+la simulación y consecuentemente la seriedad del esquema teórico
+usado en la simulación con base en los datos experimentales EXAFS 
+\citep{Dang2012}. Los datos experimetales reportados por 
+\cite{Dang2011} son los que sirven de datos de referencia en el 
+presente trabajo.
+
+\subsection{Trabajos Teóricos}
+%\paragraph{Pár.:9 Introducción al Trabajo Teórico}
+Desde un punto de vista teórico dos cuestiones contribuyeron
+al entendimiento de las propiedades de hidratación de los 
+Ln$^{3+}$: el desarrollo de pseudopotenciales (PP) y de la teoría 
+del funcional de la densidad, en la química cuántica y el 
+desarrollo de una nueva generación de campos de fuerzas, 
+incluyendo polarizabilidad, en simulaciones de dinámica molecular,
+para proporcionar resultados en acuerdo con los datos experimentales
+\citep{Dang2012} (una breve explicación de las mejora teóricas 
+será dada en los siguientes capítulos).
+%\paragraph{Propuesta }
+%{\it Resumen del trabajo de} \cite{Dolg1989,Cao2001}{\it y de la 
+%corrección de bases y la base extendida de} 
+%\cite{Dolg1993,Yang2005}.
+
+%\paragraph{Pár.:15 Trabajos teóricos de interés}
+Recientemente \cite{Dang2012} publicaron una revisión de las 
+investigaciones de la hidratación de latánidos. Entre los 
+trabajos teóricos citados por ellos, los trabajos de 
+\cite{Vill2009}, \cite{Ciup2010} y \cite{Kuta2010} son los que nos 
+interesan discutir ya que utilizan metodologías distintas y los
+resultados, accesibles con esas metodologías, son los más 
+cercanos a los datos experimentales. 
+
+\citeauthor{Vill2009} hacen un estudio de la estructura y la 
+dinámica de la hidratación de tres lantánidos trivalentes 
+(neodimio, gadolinio e iterbio) mediante dinámica molecular. Los 
+potenciales modelos que utilizaron son flexibles y polarizables 
+\citep{Sain2000}, ajustados a datos {\it ab initio}. Ellos hicieron 
+los cálculos cuánticos a nivel MP2 y utilizaron el 
+pseudopotencial largo con la correspondiente base \citep{Dolg1989} 
+para los lantánidos y la base aug-cc-pVDZ para las moléculas de 
+agua \citep{Dunn1989}. Los números de coordinación predichos 
+están en acuerdo con los datos experimentales y las constantes de 
+las tasas de intercambio son las mejores reportadas en el trabajo de 
+\cite{Dang2012}, pero las distancias promedio del lantánido a las 
+moléculas de agua fueron aproximadamente 0.1 $\AA$  mayores a las 
+distancia experimental.
+
+
+%\paragraph{Pár.:16 Trabajo de \cite{Kuta2010}}
+\cite{Kuta2010} hicieron cálculos cuánticos a nivel DFT/B3LYP y
+utilizando el pseudopotencial de Stuttgart pseudorelativista con 28 
+electrones en la capa interna de carozo (pseudopotencial corto) 
+\citep{Cao2001} y las bases segmentadas %(14s13p10d8f6g)/[10s8p5d4f3g] 
+\citep{Cao2002} encontrando que la distancia promedio 
+lantánido-oxígeno, tanto para los sistemas con coordinación 
+ocho como los de nueve, disminuye cuadráticamente, como debería 
+esperarse de acuerdo con con la contracción de los lantánidos. 
+Las distancias que reportaron fueron sistemáticamente mayores 
+($\sim$ 0.05 \AA) a las experimentales, con solo una esfera de 
+hidratación. Además, cuando agregaron la segunda esfera de 
+hidratación de manera explícita lograron una contracción de la 
+longitud promedio lantánido oxígeno (de 0.02-0.07 \AA) mejorando 
+los resultados, dando valores mucho más cercanos a los 
+experimentales.
+
+%\paragraph{Pár.:17 Trabajo de \cite{Ciup2010}}
+Por otro parte, \cite{Ciup2010} en sus cálculos usaron un PP 
+que incluyera la capa f, el psudopotencial largo \citep{Dolg1989}, y 
+la base extendida para los electrones de valencia de los iones de 
+lantánidos \citep{Yang2005}, %fue (6s6p5d)/[4s4p4d] con la adisión 
+%de 2, 1 y 1 funsiones difusas s, p y d y funciones de polarización
+%3f y 2g, es decir (8s7p6d3f2g)/[6s5p5d3f2g], 
+y para las moléculas de agua utilizaron la base aug-cc-pVDZ 
+\citep{Dunn1989}. Encontraron la necesidad, para obtener el número 
+de coordinación experimental, de calcular las energías de los 
+sistemas optimizados a nivel MP2 con el PP y las bases mencionadas 
+para los lantánidos y con la base aug-cc-pVTZ para las moléculas 
+de agua a un nivel SCS-MP2 \citep{Grim2003} además de agregar un 
+modelo de medio continuo polarizable (PCM). Las distancias que ellos 
+obtuvieron son las más cercanas a los datos experimentales 
+reportados por D`Angelo \citep{Dang2012}.
+
+%\paragraph{Pár.:18 Conclución del la investigación bibiográfica}
+Tanto en el trabajo de Kuta como el de Ciupka se concluye que es 
+necesaria la segunda capa de hidratación para obtener las 
+estructuras de hidratación correcta. Además Ciupka muestra que no
+es posible obtener el número de coordinación correcto usando DFT
+y agregar explícitamente la segunda capa de hidratación a un 
+nivel SCS-MP2 no es realizable, computacionalmente hablando, 
+y la inclusión de los efecto de bulto mediante un modelo de medio
+polarizable continuo en un cálculo de optimización es 
+extremadante difícil debido a los problemas de convergencia y la 
+gran cantidad de puntos sillas.
+
+La intención del presente trabajo era mejorar los resultados
+obtenidas por \citep{Vill2009} y completar el estudio de toda la 
+serie lantánidos, por lo que se hicieron nuevos cálculos 
+modificando los parámetros, haciendo el ajustando al límite de 
+base completa, pero en ninguno de los resultados se pudo llegar al 
+número de coordinación experimental, por lo que se decidió 
+mejorar los cálculos cuánticos. Al encontrar que la metodología
+en los cálculos cuánticos para obtener el número de 
+coordinación, las distancias promedio de los lantánidos a los
+átomos de oxígeno y las energías libres de hidratación 
+experimentales no era clara o incosistente en diferentes procesos del
+cálculo se decidió tratar de encontrar una metodología que 
+predijera los resultados experimentales de una forma autoconsistente.
+
+%\paragraph{Pár.:19 Introdución a AG}
+Una de las propuestas del presente trabajo es la utilización de
+algoritmos genéticos para resolver los problemas de convergencia en
+la utilización de PCM en las optimizaciones de sistemas cuánticos.
+Los algoritmos genéticos (AG) son métodos de optimización, los 
+cuales no incluyen los cálculos de las dirivadas, y están basados
+en el proceso de evolución darwiniano. Los AG fueron exitosamente
+usados en muchas áreas de la ciencia y la tecnología cuando el 
+óptimo global para funciones complejas y de muchos parámetros 
+necesita ser encontrado. Los AG ya mostraron ser una técnica 
+efectiva en la búsqueda de mínimos globales en sistemas
+químicos, por ejemplo el trabajo de \cite{Alex2005} y los trabajos
+ahí citados.
+

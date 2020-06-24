@@ -1,0 +1,98 @@
+\begin{thebibliography}{20}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem[{Alexandrova \& Boldyrev(2005)}]{Alex2005}
+\textsc{Alexandrova, A.~N. \& Boldyrev, A.~I.} (2005).
+\newblock \emph{J. Chem. Theory Comput.} \textbf{1}, 566.
+
+\bibitem[{B\"unzli(2006)}]{Bunz2006}
+\textsc{B\"unzli, G.} (2006).
+\newblock \emph{Acc. Chem. Res.} \textbf{39}, 53.
+
+\bibitem[{Cao \& Dolg(2001)}]{Cao2001}
+\textsc{Cao, X. \& Dolg, M.} (2001).
+\newblock \emph{J. Chem. Phys.} \textbf{115}, 7348.
+
+\bibitem[{Cao \& Dolg(2002)}]{Cao2002}
+\textsc{Cao, X. \& Dolg, M.} (2002).
+\newblock \emph{J. Molec. Struct. (Theomchem)} \textbf{581}, 139.
+
+\bibitem[{Ciupka \emph{et~al.}(2010)Ciupka, Cao-Dolg, Wiebke \&
+  Dolg}]{Ciup2010}
+\textsc{Ciupka, J., Cao-Dolg, X., Wiebke, J. \& Dolg, M.} (2010).
+\newblock \emph{Phys. Chem. Chem. Phys.} \textbf{12}, 13215.
+
+\bibitem[{Cundari \& Stevens(1993)}]{Cund1993}
+\textsc{Cundari, T.~R. \& Stevens, W.~J.} (1993).
+\newblock \emph{J. Chem. Phys.} \textbf{98}, 5555.
+
+\bibitem[{D`Angelo \& Spezia(2012)}]{Dang2012}
+\textsc{D`Angelo, P. \& Spezia, R.} (2012).
+\newblock \emph{Chem. Eur. J.} \textbf{18}, 11162.
+
+\bibitem[{D`Angelo \emph{et~al.}(2011)D`Angelo, Zitolo, Migliorati, Chillemi,
+  Duvail, Vitorge, Abadie \& Spezia}]{Dang2011}
+\textsc{D`Angelo, P., Zitolo, A., Migliorati, V., Chillemi, G., Duvail, M.,
+  Vitorge, P., Abadie, S. \& Spezia, R.} (2011).
+\newblock \emph{Inorg. Chem.} \textbf{50}, 4572.
+
+\bibitem[{Dolg \emph{et~al.}(1989)Dolg, Stoll, Savin \& Preuss}]{Dolg1989}
+\textsc{Dolg, M., Stoll, H., Savin, A. \& Preuss, H.} (1989).
+\newblock \emph{Theor. Chim. Acta} \textbf{75}, 173.
+
+\bibitem[{Grimme(2003)}]{Grim2003}
+\textsc{Grimme, S.} (2003).
+\newblock \emph{J. Chem. Phys} \textbf{118}, 9095.
+
+\bibitem[{Hern\'andez-Cobos \emph{et~al.}(2005)Hern\'andez-Cobos, Saint-Martin,
+  Mackie, Vega \& Ortega-Blake}]{Hern2005}
+\textsc{Hern\'andez-Cobos, J., Saint-Martin, H., Mackie, A.~D., Vega, L.~F. \&
+  Ortega-Blake, I.} (2005).
+\newblock \emph{J. Chem. Phys.} \textbf{123}, 044506.
+
+\bibitem[{Jeske \emph{et~al.}(1985)Jeske, Lauke, Mauermann, Schumann \&
+  Marks}]{Jesk1985}
+\textsc{Jeske, G., Lauke, H., Mauermann, H., Schumann, H. \& Marks, T.} (1985).
+\newblock \emph{J. Am. Chem. Soc.} \textbf{107}, 8111.
+
+\bibitem[{Kuta \& Clark(2010)}]{Kuta2010}
+\textsc{Kuta, J. \& Clark, A.~E.} (2010).
+\newblock \emph{Inor. Chem.} \textbf{49}, 7808.
+
+\bibitem[{Ohtaki(1993)}]{Ohta1993}
+\textsc{Ohtaki, H.} (1993).
+\newblock \emph{Chem. Rev.} \textbf{93}, 1157.
+
+\bibitem[{Rao \& Raveau(1989)}]{Rao1989}
+\textsc{Rao, C. N.~R. \& Raveau, B.} (1989).
+\newblock \emph{Acc. Chem. Res.} \textbf{22}, 106.
+
+\bibitem[{Sadus(2002)}]{Sadu1999}
+\textsc{Sadus, R.~J.} (2002).
+\newblock \emph{Molecular Simulation of Fluids: Theory, Algorithms and
+  Object-Orientation}.
+\newblock Holanda: Elsevier, segunda ed.
+
+\bibitem[{Saint-Martin \emph{et~al.}(2000)Saint-Martin, Hern\'andez-Cobos,
+  Bernal-Uruchurtu, Ortega-Blake \& Berendsen}]{Sain2000}
+\textsc{Saint-Martin, H., Hern\'andez-Cobos, J., Bernal-Uruchurtu, M.~I.,
+  Ortega-Blake, I. \& Berendsen, H. J.~C.} (2000).
+\newblock \emph{J. Chem. Phys.} \textbf{113}, 10899.
+
+\bibitem[{T.~H.~Dunning(1989)}]{Dunn1989}
+\textsc{T.~H.~Dunning, J.} (1989).
+\newblock \emph{J. Chem. Phys.} \textbf{90}, 1007.
+
+\bibitem[{Villa \emph{et~al.}(2009)Villa, Hess \& Saint-Martin}]{Vill2009}
+\textsc{Villa, A., Hess, B. \& Saint-Martin, H.} (2009).
+\newblock \emph{J. Phys. Chem. B} \textbf{113}, 7270.
+
+\bibitem[{Yang \& Dolg(2005)}]{Yang2005}
+\textsc{Yang, J. \& Dolg, M.} (2005).
+\newblock \emph{Theor. Chem. Acc.} \textbf{113}, 212.
+
+\end{thebibliography}

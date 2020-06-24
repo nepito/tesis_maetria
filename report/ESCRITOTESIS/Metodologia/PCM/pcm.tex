@@ -1,0 +1,120 @@
+\section{Medio Polarizable Continuo}
+%TomasiChemRev205.105.2999
+%\paragraph{Interacci\'on Soluto-Solvente}
+La f\'isica de la interacci\'on electrost\'atica soluto-solvente es 
+simple. La distribuci\'on de carga $\rho_M$ del soluto, dentro de la
+cavidad, polariza el diel\'ectrico continuo, el cual a su vez 
+polariza la distribuci\'on de carga del soluto. Esta definici\'on de
+la interacci\'on corresponde a un proceso autoconsistente, el cual 
+es num\'ericamente resuelto siguiendo un proceso iterativo. Es 
+importante remarcar que el correspondiente potencial de interacci\'on
+es el que se pondr\'a en el hamiltoniano modelo \ref{eSit} 
+\citep{Toma2005}.
+
+%\paragraph{Evoluci\'on del ASC}
+La evoluci\'on del m\'etodo de superficie de carga aparente (ASC, por
+sus siglas en ingl\'es) del PCM m\'as viejo al presente no es solo un
+simple c\'odigo, sino un conjunto de c\'odigos, todos basados en la 
+misma filosof\'ia y compartiendo muchas caracter\'isticas, algunos
+especializados para prop\'ositos espec\'ificos, otros de uso general,
+pero con diferencias que no merecen menci\'on \citep{Toma2005}.
+
+%\paragraph{Evoluci\'on del PCM}
+La versi\'on original de PCM fue publicada en 1981, despu\'es de 
+algunos a\~nos de elaboraci\'on, fue implementada en varios paquetes
+de mec\'anica cu\'antica computacional. M\'as recientemente, PCM fue
+renombrados D-PCM (D se refiere a diel\'ectrico) para distinguirlo de
+las dos siguientes reformulaciones (CPCM y IEFPCM). Este acr\'onimo 
+no es completamente correcto como tampoco lo son las otras 
+reformulaciones que se refieren a medios diel\'ectricos. 
+
+%\paragraph{Limitaciones del PCM}
+El DPCM, como todos los miembros de la familia PCM, permite describir
+un n\'umero ilimitado de solutos, cada uno equipado con su propia 
+cavidad y su ASC, interactuando a trav\'es del diel\'ectrico. En esta
+forma, DPCM permite una extensi\'on del modelo b\'asico para el 
+fen\'omeno asociaci\'on-disociaci\'on, molecular clustering, etc., y 
+esto puede considerar un cambio continuo de una cavidad a dos 
+cavidades o m\'as cavidades durante la asociaci\'on.
+
+%\paragraph{C\'omo lo calcula Gaussian}
+El procedimiento predeterminado calcula los efectos del solvente en 
+la densidad SCF y entonces aplica teor\'ia de perturbaci\'on MP2, 
+mientras los c\'alculos de la interacci\'on externa los efectos del
+solvente autoconsistentemente con respecto a la densidad MP2.
+
+%Tomassi2005
+%\paragraph{Campo de reacci\'on}
+Normalmente se hace referencia al campo de reacci\'on del solvente 
+para el potencial de interacci\'on obtenidos con modelos continuos (y
+tambi\'en para modelos que usan mol\'eculas de solvente 
+expl\'icitas). Esta etiqueta tiene una raz\'on hist\'orica, la cual 
+est\'a relacionada con el art\'iculo de Onsager en el cual el soluto
+fue reducido a un dipolo puntual polarizable y la interacci\'on 
+electrost\'atica entre el medio polarizable y el dipolo fue expresada
+en t\'erminos de una campo electrost\'atico, teniendo origen en la 
+polarizaci\'on del diel\'ectrico. Actualmente conviene hablar en 
+t\'erminos de potencial de reacci\'on del solvente, pues un potencial
+es el t\'ermino que se introduce en el hamiltoniano.
+
+%KlamtCOSMO-RS2005ElsevierHolanda2005
+%\paragraph{COSMO y COSMO-RS}
+%Uno de los modelos de solvataci\'on continua de diel\'ectrico es el 
+%desarrollado por Klamt y colaboradores en los inicios de 1990. 
+%Despu\'es un tratamiento especial termodin\'amico de las 
+%interacciones moleculares.
+
+%\paragraph{Idea b\'asica y su desarrollo}
+En 1920, Max Born, public\'o un trabajo sobre la energ\'ia de libre
+de solvataci\'on de un ion, $\Delta G^{ion}_{S}$. \'El present\'o la 
+idea de aproximar al solvente alrededor de un ion como un continuo
+diel\'ectrico. Definiendo una frontera esf\'erica entre el ion y el
+continuo mediante un radio efectivo del ion, $R^{ion}$, \'el obtuvo 
+el resultado simple 
+$$\Delta G^{ion}_{S}=-\frac{\epsilon_S-1}{\epsilon_S}\frac{Q^{ion^2}}
+{2R^{ion}}.$$
+Aqu\'i, se usa la convenci\'on de referirse al solvente por un 
+sub\'indice y al soluto por un super\'indice; entonces $\epsilon_S$ 
+es la constante diel\'ectrica del solvente y $Q^{ion}$ es la carga 
+total del ion. Born, seguramente, estaba consiente de que esta es una
+aproximaci\'on cruda, pero su f\'ormula da un entendimiento 
+cualitativo de los valores de las energ\'ias de solvataci\'on 
+observados experimentalmente. Despu\'es la idea fue tomada por 
+Kirkwood y Onsager, quienes extendieron la descripci\'on de la 
+solvataci\'on por un medio continuo diel\'ectrico tomando en cuenta 
+los momentos dipolares el\'ectrico. Kirkwood deriv\'o la f\'ormula 
+general:
+$$\Delta G^{ion}_{S}=-\frac{1}{2}\sum^{\inf}_{l=1}f_l(\epsilon_l)
+\frac{M^{X^2}_l}{R^{X^{2l-1}}}$$
+con
+$$f_l(\epsilon_S)=\frac{\epsilon-1}{\epsilon + x_l}$$
+y 
+$$x_l=\frac{l-1}{l}.$$
+Siendo el primer t\'ermino el de la f\'ormula de Born y el segundo el
+modelo de Onsager de la energ\'ia de solvataci\'on de una mol\'ecula 
+dipolar
+$$\Delta G^X_S=\frac{1}{2}\frac{\epsilon_S-1}{\epsilon_S+\frac{1}{2}}
+\frac{\mu^{X^2}}{R^{X^3}}.$$
+
+%\paragraph{El teorema de Poisson}
+De acuerdo con la electrost\'atica b\'asica, la polarizaci\'on de un 
+diel\'ectrico continuo homog\'eneo puede ser descrito por la densidad de
+polarizaci\'on de volumen $\vec P(\vec r)$ o por la densidad de carga
+de polarizaci\'on superficial $\sigma(\vec r)$. Considerando el 
+diel\'ectrico continuo alrededor de un soluto infinitamente 
+extendido, la densidad de carga de polarizaci\'on, $\sigma$, en la
+superficie externa puede ser ignorada. Como resultado, solo la 
+densidad de carga de polarizaci\'on, $\sigma$, en la interfase entre
+las mol\'eculas del soluto y el medio diel\'ectrico es relevante para
+la interacci\'on soluto-diel\'ectrico. As\'i, no se requiere un corte
+y los errores del c\'alculo solo dependen del tama\~no de los 
+peque\~nos segmentos de superficie que construyen la cavidad.
+
+%\paragraph{Cavidades}
+Despu\'es de asignar radios, la uni\'on de las correspondientes
+esferas centradas en los \'atomos es considerada como el interior de
+la mol\'ecula. Tal regi\'on tienen forma de grietas y c\'uspides, las
+cuales son fatales para la descripci\'on de un diel\'ectrico 
+continuo, ya que el campo el\'ectrico enfrente de una c\'uspide
+diel\'ectrica se vuelve infinito y las condiciones a la frontera ya 
+no se pueden resolver.

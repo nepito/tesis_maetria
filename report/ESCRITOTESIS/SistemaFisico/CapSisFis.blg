@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: CapSisFis.aux
+The style file: jtbnew.bst
+Database file #1: ../bibliografia2.bib
+Warning--empty title in Bady2000
+Warning--empty title in Ciup2010
+Warning--empty title in Clou1973
+Warning--empty title in Dang2012
+Warning--empty title in Dolg1989
+Warning--empty title in Helm2005
+Warning--empty title in Kuta2010
+Warning--empty title in Mori1997
+Warning--empty title in Ohta1993
+Warning--empty title in Sain2000
+Warning--empty title in Shar2013
+You've used 13 entries,
+            2771 wiz_defined-function locations,
+            672 strings with 5482 characters,
+and the built_in function-call counts, 8153 in all, are:
+= -- 637
+> -- 330
+< -- 11
++ -- 127
+- -- 114
+* -- 673
+:= -- 1247
+add.period$ -- 28
+call.type$ -- 13
+change.case$ -- 92
+chr.to.int$ -- 13
+cite$ -- 24
+duplicate$ -- 624
+empty$ -- 622
+format.name$ -- 155
+if$ -- 1604
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 133
+newline$ -- 62
+num.names$ -- 52
+pop$ -- 297
+preamble$ -- 1
+purify$ -- 90
+quote$ -- 0
+skip$ -- 193
+stack$ -- 0
+substring$ -- 337
+swap$ -- 334
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 111
+warning$ -- 11
+while$ -- 54
+width$ -- 0
+write$ -- 158
+(There were 11 warnings)

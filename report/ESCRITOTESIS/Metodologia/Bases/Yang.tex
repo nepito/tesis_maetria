@@ -1,0 +1,82 @@
+\subsection*{Base de \cite{Yang2005}}
+%\paragraph{Orbital de Cristal}
+%Esta informaci\'on fue tomada de old.iupac.org
+Orbital de cristal (sin\'onimo banda orbital), es la funci\'on de un
+electr\'on extendida a trav\'es de un cristal. T\'ipicamente una 
+combinaci\'on lineal de orbitales de Bloch:
+$$\Psi_j=\sum_{\mu}a_{j\mu}\phi_{\mu}.$$
+Los orbitales de Bloch incorporan la simetr\'ia de translaci\'on
+aplicando condiciones a la frontera
+$$\phi_{\mu}(\vec r)=\sum_n\exp{ikr}\chi_{\mu}(\vec r)$$
+donde $\chi_{\mu}(\vec r)$ es el n-\'esimo orbital at\'omico definido 
+el vector de translaci\'on $\vec r$. Los diferentes valores adoptados
+por el vector de onda $\vec k$ determinan la simetr\'ia y las 
+propiedades nodales del orbital de cristal.
+
+%\paragraph{?`Porqu\'e orbitales de cristal}
+%YangTheorChemAcc2005.113.212
+Gracias a los recientes logros en la descripci\'on y predicci\'on las
+propiedades de bulto de los materiales, los c\'alculos de las 
+estructuras electr\'onicas se han vuelto m\'as importantes tanto en
+qu\'imica como en f\'isica de materia condensada para dise\~nar y 
+preparar materiales con propiedades controladas. El acceso a 
+c\'odigos complicados y poder de c\'omputo ha hecho posible 
+experimentos computacionales {\it ab initio}. Estos c\'alculos de 
+primeros principios fueron hechos com\'unmente usando bases de ondas 
+planas junto con Pseudopotenciales y teor\'ia del funcional de la 
+densidad en f\'isica del estado s\'olido. Los m\'etodos de Orbitales 
+de Cristales gan\'o atenci\'on en el c\'alculo de s\'olidos desde la
+implementaci\'on de la combinaci\'on lineal de orbitales at\'omicos 
+Hartree-Fock (LCAO) en el programa CRYSTAL para el tratamiento de 
+sistemas peri\'odicos. Los m\'etodos de ECP han sido aplicados a los 
+lant\'anidos principalmente para eliminar la capa abierta 4f y los
+principales problemas relacionados a esta. %(?`Cu\'ales son esos problemas?). 
+Sin embargo, los conjuntos de valencia generados para pseudopotenciales 
+consistentes con la energ\'ia de los lant\'anidos para aplicaciones
+moleculares no pueden ser transferidos directamente a componentes 
+peri\'odicos sin modificaci\'on. La raz\'on es que, frecuentemente,
+los conjunto de bases at\'omicas con funciones difusas dan como 
+resultado un traslape entre funciones de Bloch que construyen los 
+orbitales de cristal y as\'i no solo dan como resultado un 
+desperdicio de recursos computacionales sino que adem\'as pueden 
+causar problemas con dependencia cuasilineal debido a las 
+limitaciones num\'ericas. 
+
+%\paragraph{Resumen del trabajo de \cite{Yang2005}}
+\cite{Yang2005} optimizaron un conjunto de bases Gaussianas a la 
+energ\'ia HF para toda la serie de los iones de lant\'anidos
+trivalentes (desde lantano hasta lutecio), adem\'as las derivaron y 
+adaptaron para c\'alculos de Orbitales de Cristal usando los 
+pseudopotenciales de Stuttgart-Koel de consistencia energ\'etica. 
+
+%\ocultartrue
+%\begin{Vocultar}
+%\paragraph{Breve Teor\'ia de los OC}
+%La naturaleza de los orbitales de cristal $\psi_i(r;k)$ en sistemas 
+%peri\'odicos, los cuales son una combinaci\'on lineal de funciones de
+%Bloch $\phi_{\mu}(r;k)$ que son contraidas a funciones gaussianas 
+%(\ref{OC}). Cada funci\'on de Bloch es definida como la suma de los 
+%mismos orbitales at\'omicos (OA,$\varphi_{\mu}(r-A_{\mu}-g)$) 
+%trasladados sobre un enrejado infinito con cada OA multiplicado por 
+%una onda plana (\ref{FB}), las cuales son expresadas como una 
+%combinaci\'on lineal funciones gaussianas generadas (\ref{FG}). 
+%As\'i, el conjunto de bases real son las funciones de Bloch debido a
+%la raz\'on los coeficientes de combinaci\'on $a_{\mu,i}$ est\'an 
+%involucrados en el procedimiento variasional y contribuyen en los
+%c\'alculos de los elementos de la matriz densidad. Ya que el esquema
+%es conservado, la libertad variasional es constante, y las funciones
+%de Bloch no son sensibles al aumento en el tama\~no de las funciones
+%primitivas de (4s4p3d) a (6s6p5d) debido al t\'ermino de las ondas
+%planas $\exp{ik\cdot g}$, aunque un aumento en el n\'umero de 
+%primitivas proporciona una mejor descripci\'on de OA.
+%
+%\be\label{OC}
+%\psi_i(r;k)=\sum_{\mu}a_{\mu,i}(k)\phi_{\mu}(r;k)
+%\ee
+%\be\label{FB}
+%\phi_{\mu}(r;k)=\sum_{g}\varphi_{\mu}(r-A_{\mu}-g)\exp{ik\cdot g}
+%\ee
+%\be\label{FG}
+%\varphi_{\mu}(r-A_{\mu}-g)=\sum^{n_G}_{j}d_jG(\alpha_j;r-A_{\mu}-g).
+%\ee
+%\end{Vocultar}

@@ -1,0 +1,202 @@
+%\paragraph{El m\'etodo/Introducci\'on}
+\section{C\'alculos cu\'anticos en fase gaseosa}
+Los problemas que surgen, cuando la hidrataci\'on de Ln$^{3+}$ es 
+abordada computacionalmente, son debidos al gran n\'umero de 
+electrones involucrados, a la importancia de los efectos relativistas
+y a la capa f abierta de los lant\'anidos. La mayor\'ia de las 
+investigaciones te\'oricas a nivel cu\'antico referentes a este tema 
+usan Pseudopotenciales (PP) y teor\'ia del funcional de la densidad,
+de esta manera resuelven los dos primeros problemas y si la capa f es
+agregada al pseudopotencial, tambi\'en el tercer problema es resuelto
+\citep{Ciup2010}. Las distancias Ln$^{3+}$-O te\'oricas son mayores a
+las experimentales cuando los c\'alculos son hechos utilizando PP y 
+DFT como se muestra en los art\'iculos de \cite{Kuta2010} y los 
+trabajos citados por \cite{Dang2012}. Como ya se dijo, una probable
+explicaci\'on a las distancias te\'oricas largas, dada por 
+\cite{Kuta2010}, es la ausencia de los efectos de bulto al solo 
+considerar expl\'icitamente las aguas de la primera capa de 
+hidrataci\'on, esta explicaci\'on es sustentada en el hecho de una 
+contracci\'on en las distancias promedios al agregar las mol\'eculas 
+de agua de la segunda capa. Los c\'alculos DFT son lo suficientemente
+``baratos'' como para permitir los c\'alculos de la hidrataci\'on 
+incluyendo mol\'eculas de la segunda esfera de hidrataci\'on. Sin 
+embargo, este procedimiento tiene la desventaja de presentar 
+m\'ultiples m\'inimos. En el presente trabajo se toman en cuenta 
+los efectos de las esferas de hidrataci\'on mayores usando un modelo 
+de medio continuo polarizable. Lo anterior se combin\'o
+con pseudopotenciales escalares relativistas con la capa 4f en el 
+carozo junto con DFT y m\'etodos de teor\'ia de perturbaci\'on, para
+tomar en cuenta los efectos de correlaci\'on. A continuaci\'on se 
+explica en que consisten los c\'alculos cu\'anticos, en particular el
+m\'etodo Hartree-Fock. Despu\'es una explicaci\'on de los m\'etodos
+para considerar los efectos de correlaci\'on es dada, los m\'etodos
+perturbativos de muchos cuerpos son los m\'as relevantes para este 
+trabajo. En seguida, la propuesta de \cite{Toma2005} para un medio
+polarizable continuo (D-PCM) es brevemente revisada. Finalmente, el
+cap\'itulo termina con el tema de algoritmos gen\'eticos, herramienta
+usada para obtener las configuraciones optimizadas.
+
+\subsection{M\'etodo Hartree-Fock}
+%DolgChemRev2012.112.403
+Es com\'unmente aceptado que la mec\'anica cu\'antica necesita ser
+aplicada a la qu\'imica %para obtener una descripci\'on te\'orica no
+emp\'irica precisa de los \'atomos, mol\'eculas y s\'olidos. 
+Entonces, si la mec\'anica cu\'antica es utilizada, la ecuaci\'on 
+central que se debe resolver es la ecuaci\'on de Schr\"odinger
+dependiente del tiempo
+\be\label{eSdt}
+\hat H |\Psi\rangle=i\frac{\partial}{\partial t}|\Psi\rangle
+\ee
+donde $\hat H$ es el hamiltoniano que define al sistema y el estado
+del sistema es descrito por la funci\'on de onda $|\Psi\rangle$. 
+Si el hamiltoniano $\hat H$ no depende expl\'icitamente del tiempo, 
+la funci\'on de onda ser\'a
+\be\label{ef}
+|\Psi\rangle=|\psi\rangle\cdot e^{-iEt}
+\ee
+y la ecuaci\'on de Schr\"odinger independiente del tiempo para 
+estados estacionarios con energ\'ia total $E$ y descritos por la 
+funci\'on de onda toma la siguiente forma
+\be\label{eSit}
+\hat H|\psi\rangle=E|\psi\rangle.
+\ee
+
+%\paragraph{Primera Aproximaci\'on}
+La aproximaci\'on de Born-Oppenheimer (BO) permite una separaci\'on
+aproximada  de la ecuaci\'on de Schr\"odinger independiente del 
+tiempo (\ref{eSit}) en una parte nuclear y una parte electr\'onica, 
+la cual trata a los electrones en el campo del n\'ucleo, y a \'este 
+en una posici\'on fija, esta aproximaci\'on corresponde a la 
+ecuaci\'on para la mayor\'ia de los m\'etodos de estructura 
+electr\'onica en qu\'imica cu\'antica. Solo la aproximaci\'on BO 
+permite a los qu\'imicos escribir las f\'ormulas estructurales con 
+s\'imbolos qu\'imicos de los \'atomos denotando la posici\'on de los 
+n\'ucleos como los orbitales internos o de carozo, as\'i  como los 
+puntos como los electrones de valencia. Sin embargo mayores 
+aproximaciones son necesarias para llegar a tan  simple 
+representaci\'on esquem\'atica de \'atomos, mol\'eculas y s\'olidos 
+con base en consideraciones qu\'imico cu\'anticas.
+
+%\paragraph{El Hamiltoniano}
+En c\'alculos de qu\'imica cu\'antica se considera un hamiltoniano
+general $\hat H$ para los $n$ electrones y los $N$ n\'ucleos, en 
+ausencia de campos externos, esto es
+\be
+\hat H=\sum^n_i\hat h (i)+\sum^n_{i<j}\hat g(i,j)+\sum^N_{\lambda<\mu}
+\frac{Z_{\lambda}Z_{\mu}}{ r_{\lambda\mu}}.
+\ee
+Los \'indices $i$ y $j$ denotan electrones, mientras $\lambda$ y 
+$\mu$ son de los n\'ucleos. $Z_{\lambda}$ es la carga del n\'ucleo 
+$\lambda$-\'esimo. Los operadores de una y dos part\'iculas, $\hat h$ 
+y $\hat g$, pueden ser de una forma relativista, cuasirelativista o 
+no relativista.
+
+%\paragraph{M\'etodos de la Mec\'anica Cu\'antica}
+La soluci\'on exacta de la ecuaci\'on de Schr\"odinger independiente
+del tiempo (\ref{eSit}) a\'un bajo la suposici\'on de la 
+aproximaci\'on BO, es solo realizable para sistemas de un electr\'on. 
+Una gran parte de la qu\'imica cu\'antica trabaja en el desarrollo de
+m\'etodos para la aproximaci\'on, aunque suficientemente precisa de 
+la ecuaci\'on (\ref{eSit}). Las dos principales estrategias 
+desarrolladas durante al menos las \'ultimas nueve d\'ecadas son la 
+teor\'ia basada en funciones de onda (WFT) y teor\'ia del funcional 
+de la densidad (DFT). 
+
+%\paragraph{Determinante de Slater}
+La descripci\'on Hartree-Fock es el m\'etodo central de la teor\'ia
+{\it ab initio} WFT. La funci\'on de onda de muchos electrones m\'as
+simple es utilizada, en la cual los electrones obedecen el principio 
+de antisimetr\'ia de Pauli y la indistinguibilidad como part\'iculas
+elementales. El determinante de Slater para un sistema de $n$ 
+electrones (de capa cerrada) es una combinaci\'on lineal 
+antisimetrizada del producto de $n$ funciones de un electr\'on, esto
+es, esp\'in-orbital ortonormal $|\varphi\rangle$
+\be\label{fHF}
+|\Phi_{HF}\rangle=\frac{1}{\sqrt{n!}}\det{||\varphi_1(1)\rangle
+|\varphi_2(2)\rangle}\cdots|\varphi_n(n)\rangle|.
+\ee
+
+%\paragraph{M\'etodo Hartree-Fock}
+%VleckRevModPhy1935.7.167
+La esencia del m\'etodo Hartree es imaginar que un electr\'on dado se 
+mueve en el campo producido por una mancha de electrones m\'as que en
+el campo instant\'aneo de los electrones. En otras palabras, la 
+posiciones moment\'anea de los electrones es remplazada por la 
+posici\'on promedio, cuando la fuerza ejercida sobre el electr\'on 
+dado es calculada. El campo de fuerzas obtenido es, por supuesto, el 
+mismo que se obtendr\'ia de una distribuci\'on de fuerza 
+electrost\'atica cuya densidad en cualquier regi\'on es proporcional 
+a la fracci\'on total del tiempo de las cargas responsables en esa 
+regi\'on particular. La gran ventaja del m\'etodo de Hartree es que 
+reduce el problema de $n$ cuerpos a $n$ problemas de un cuerpo, ya 
+que el proceso de promediar hace que la fuerza en una carga sea
+independiente de la posici\'on de las otras cargas. Es claro que, en 
+consecuencia, es inadecuadamente tomado el hecho que dos electrones
+est\'an raramente juntos debido a la gran fuerza de repulsi\'on entre
+ellos. 
+%As\'i, el m\'etodo de orbitales moleculares (OM) da t\'erminos
+%i\'onicos muy grandes.
+
+%\paragraph{Ecuaci\'on de Fock}
+La funci\'on de onda HF no resuelve la ecuaci\'on de Schr\"odinger
+(\ref{eSit}); sin embargo, mapea aproximadamente el problema 
+insoluble de muchos electrones a los problemas de un electr\'on en 
+una distribuci\'on de carga efectiva, esto es, la ecuaci\'on 
+(can\'onica) de Fock para esp\'in-orbital $|\varphi\rangle$ y sus 
+energ\'ias orbitales $\varepsilon$
+\be\label{ecF}
+\hat F|\varphi_i\rangle=\varepsilon_i|\varphi_i\rangle.
+\ee
+Aqu\'i, $\hat F$ denota al operador de Fock, el hamiltoniano de un
+electr\'on efectivo tomando en cuenta las interacciones (promedio) 
+de un electr\'on esp\'in-orbital $|\varphi\rangle$ con el n\'ucleo y 
+todos los otros electrones en el sistema. Ya que el operador de Fock
+$\hat F$ depende de su eigenfunci\'on $|\varphi\rangle$, la
+ecuaci\'on de Fock (\ref{ecF}) tiene que ser resuelta iterativamente
+mediante un procedimiento de campo autoconsistente (SCF). La 
+ecuaci\'on de Fock y la funci\'on de onda aproximada (normalizada), 
+la ecuaci\'on (\ref{fHF}) son calculadas para el hamiltoniano exacto 
+(\ref{eSit}) y aplicando el principio variacional de Ritz-Raykeigh se
+obtiene
+\be
+E_{HF}=\langle\Phi_{HF}|\hat H|\Phi_{HF}\rangle\geq E_0,
+\ee
+con $E_0$ siendo la energ\'ia exacta del estado base. 
+
+%\paragraph{M\'etodo Variacional}
+La variaci\'on de la energ\'ia se hace respecto al cambio de los
+orbitales $|\varphi\rangle$, bajo la restricci\'on de formar una 
+base ortonormal. La mayor\'ia de los c\'alculos aplican el formalismo
+de Roothaan y Hall, donde los orbitales $|\varphi\rangle$ son 
+expandidos como una combinaci\'on lineal de funciones bases de una
+part\'icula $|\chi\rangle$
+\be
+|\varphi_i\rangle=\sum_jc_{ij}|\chi_j\rangle,
+\ee
+por ejemplo, de funciones Gaussianas. La calidad de este conjunto 
+base de funciones decide que tan cerca se puede llegar de la mejor
+soluci\'on HF, esto es, el l\'imite HF puede ser alcanzado cuando se
+usa una base completa  de una part\'icula.
+
+%\paragraph{Introducci\'on a los m\'etodos post-HF} 
+La diferencia entre la energ\'ia l\'imite HF $E_{HF}$ y la energ\'ia 
+exacta $E$ en la ecuaci\'on (\ref{eSit}) es llamada la energ\'ia de 
+correlaci\'on y es debida a la respuesta moment\'anea de los 
+electrones y su interacci\'on mutua, la cual solo es tratada en 
+promedio en el formalismo HF. Usualmente es impracticable el uso de 
+una base de una o varias part\'iculas, as\'i que una de las 
+principales tareas de la qu\'imica cu\'antica computacional es la 
+selecci\'on de hamiltonianos accesibles y la combinaci\'on \'optima 
+de bases de una y varias part\'iculas. As\'i, la elecci\'on de 
+hamiltonianos impone algunas limitaciones pr\'acticas debido al 
+esfuerzo computacional requerido. 
+
+%\paragraph{Introducci\'on a PP}
+No siempre un hamiltoniano te\'oricamente mejor fundamentado 
+permitir\'a los c\'alculos pr\'acticos para la descripci\'on de 
+los resultados experimentales. T\'ipicamente un apropiado 
+compromiso con un hamiltoniano menos riguroso y la posibilidad de 
+usar bases m\'as extendidas de uno y varios electrones da una mejor 
+representaci\'on. 
+% ({\bf NOTA: Esto puede justificar el uso
+%de los PP que incluyen la capa 4f en lugar del uso de los ECPSC}).

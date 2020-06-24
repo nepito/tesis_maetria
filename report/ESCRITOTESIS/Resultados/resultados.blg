@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: resultados.aux
+The style file: jtbnew.bst
+Database file #1: ../bibliografia2.bib
+Warning--empty title in Cao2001
+Warning--empty title in Cao2002
+Warning--empty title in Ciup2010
+Warning--empty title in Dang2012
+Warning--empty title in Dolg1993
+Warning--empty title in Dolg1989
+Warning--empty title in Grim2003
+Warning--empty title in Kuta2010
+Warning--empty title in Toma2005
+Warning--empty title in Yang2005
+You've used 10 entries,
+            2771 wiz_defined-function locations,
+            650 strings with 5076 characters,
+and the built_in function-call counts, 5787 in all, are:
+= -- 459
+> -- 220
+< -- 6
++ -- 85
+- -- 75
+* -- 486
+:= -- 901
+add.period$ -- 20
+call.type$ -- 10
+change.case$ -- 65
+chr.to.int$ -- 10
+cite$ -- 20
+duplicate$ -- 452
+empty$ -- 438
+format.name$ -- 113
+if$ -- 1113
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 95
+newline$ -- 48
+num.names$ -- 40
+pop$ -- 218
+preamble$ -- 1
+purify$ -- 65
+quote$ -- 0
+skip$ -- 132
+stack$ -- 0
+substring$ -- 224
+swap$ -- 232
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 10
+while$ -- 40
+width$ -- 0
+write$ -- 117
+(There were 10 warnings)

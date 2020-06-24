@@ -1,0 +1,67 @@
+\ProvidesPackage{CapIntro}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\matFrit}{\left(\begin{array}{lcr} 0 & A & 0 \\ A^{\ast} & 0 & B\\ 0 & B^* & C\end{array}\right)}
+\newcommand{\matFritti}{\left(\begin{array}{lcr} 0 & A & 0 \\ A^{\ast} & D & B\\ 0 & B^* & C\end{array}\right)}
+\newcommand{\gme}{\ensuremath{{SU(2)_L\times U(1)_Y}}}
+\newcommand{\et}{\ensuremath{\hat e_{\theta}}}
+\newcommand{\vevh}{\ensuremath{\langle\Phi\rangle_0}}
+\newcommand{\mpi}{\ensuremath{\left(\ba{lr} 0 & 1 \\ 1 & 0 \ea\right)}}
+\newcommand{\mpii}{\ensuremath{\left(\ba{lr} 0 & -i \\ i & 0 \ea\right)}}
+\newcommand{\mpiii}{\ensuremath{\left(\ba{lr} 1 & 0 \\ 0 & -1 \ea\right)}}
+\newcommand{\fcp}{\ensuremath{\mathop{\rightarrow}\limits^{CP}}}
+
+\newtheorem{theorem}{Teorema}
+
+\newbox\boxocultar
+\newif\ifocultar
+\newenvironment{Vocultar}
+ {\setbox\boxocultar\vbox\bgroup}
+ {\egroup\ifocultar\else\unvbox\boxocultar\fi}
+
+\newbox\boxocultarH
+\newif\ifocultarH
+\newenvironment{Hocultar}
+ {\setbox\boxocultarH\hbox\bgroup}
+ {\egroup\ifocultarH\else\unhbox\boxocultarH\fi}
+
+\newcommand{\comp}[1]{ 
+\ifx AA \ocultarfalse \begin{Vocultar}
+\vspace{1mm}
+%\cuadro{
+\begin{mientorno}
+{\small{#1}}
+\end{mientorno}%}{white}{white}{black}
+\end{Vocultar} \else \ocultartrue \begin{Vocultar}
+#1
+\end{Vocultar} \fi}
+
+\newcommand{\comh}[1]{ 
+\ifx AA \ocultarHfalse \begin{Hocultar}
+({\bf Comentario:} {\it #1})
+\end{Hocultar} \else \ocultarHtrue \begin{Hocultar}
+#1
+\end{Hocultar} \fi}
+
+\newcommand{\parr}[2]{ 
+\ifx AA \ocultarHfalse \begin{Hocultar}
+{\bf P\'ar. #1: #2}
+\end{Hocultar} \else \ocultarHtrue \begin{Hocultar}
+#1
+\end{Hocultar} \fi}
+
+\newenvironment{mientorno}[1][0.8]{\begin{center}\begin{minipage}%
+{#1\textwidth}\tt}{\end{minipage}\end{center}}
+
+\newcommand{\cuadro}[4]{
+  \psframebox[linewidth=0.5mm,linecolor={#4},
+       fillstyle=gradient,gradangle=0,gradbegin={#2},
+       gradend={#3},gradmidpoint=1.0,framesep=0.5cm]
+       {\large#1}
+}
+
+
+\include{CapIntro_pream}

@@ -1,0 +1,49 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem[{Cao \& Dolg(2001)}]{Cao2001}
+\textsc{Cao, X. \& Dolg, M.} (2001).
+\newblock \emph{J. Chem. Phys.} \textbf{115}, 7348.
+
+\bibitem[{Cao \& Dolg(2002)}]{Cao2002}
+\textsc{Cao, X. \& Dolg, M.} (2002).
+\newblock \emph{J. Molec. Struct. (Theomchem)} \textbf{581}, 139.
+
+\bibitem[{Ciupka \emph{et~al.}(2010)Ciupka, Cao-Dolg, Wiebke \&
+  Dolg}]{Ciup2010}
+\textsc{Ciupka, J., Cao-Dolg, X., Wiebke, J. \& Dolg, M.} (2010).
+\newblock \emph{Phys. Chem. Chem. Phys.} \textbf{12}, 13215.
+
+\bibitem[{D`Angelo \& Spezia(2012)}]{Dang2012}
+\textsc{D`Angelo, P. \& Spezia, R.} (2012).
+\newblock \emph{Chem. Eur. J.} \textbf{18}, 11162.
+
+\bibitem[{Dolg \emph{et~al.}(1993)Dolg, Stoll \& Preuss}]{Dolg1993}
+\textsc{Dolg, M., Stoll, H. \& Preuss, H.} (1993).
+\newblock \emph{Theor. Chim. Acta} \textbf{85}, 441.
+
+\bibitem[{Dolg \emph{et~al.}(1989)Dolg, Stoll, Savin \& Preuss}]{Dolg1989}
+\textsc{Dolg, M., Stoll, H., Savin, A. \& Preuss, H.} (1989).
+\newblock \emph{Theor. Chim. Acta} \textbf{75}, 173.
+
+\bibitem[{Grimme(2003)}]{Grim2003}
+\textsc{Grimme, S.} (2003).
+\newblock \emph{J. Chem. Phys} \textbf{118}, 9095.
+
+\bibitem[{Kuta \& Clark(2010)}]{Kuta2010}
+\textsc{Kuta, J. \& Clark, A.~E.} (2010).
+\newblock \emph{Inor. Chem.} \textbf{49}, 7808.
+
+\bibitem[{Tomasi \emph{et~al.}(2005)Tomasi, Mannucci \& Cammi}]{Toma2005}
+\textsc{Tomasi, J., Mannucci, B. \& Cammi, R.} (2005).
+\newblock \emph{Chem. Rev.} \textbf{105}, 2999.
+
+\bibitem[{Yang \& Dolg(2005)}]{Yang2005}
+\textsc{Yang, J. \& Dolg, M.} (2005).
+\newblock \emph{Theor. Chem. Acc.} \textbf{113}, 212.
+
+\end{thebibliography}

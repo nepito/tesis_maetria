@@ -1,0 +1,80 @@
+\documentclass[twoside,12pts]{book}
+\usepackage{Tesis}
+
+\title{\vspace{-2cm}{\LARGE {\bf Universidad Nacional Aut\'onoma de M\'exico}}\\ 
+{\large Tesis}\\
+\vspace{0cm}
+Estudio Te\'orico de la Hidrataci\'on de Lantanidos 3+\\
+Versi\'on 0.0 de la tesis\\ 
+\vspace{0cm}}
+\author{
+Braulio Joel Rojas Mayoral\vspace{0cm}} 
+\date{{\small Junio de 2014}}
+\makeindex
+\begin{document}
+\input{guionado.tex}
+\maketitle
+\pagenumbering{roman}
+\tableofcontents
+\renewcommand\tablename{Tabla}
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de Figuras}
+\listoffigures
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de Tablas}
+\listoftables
+
+%{\normalsize
+%\input{agradecimiento.tex}
+%\newpage}
+
+%{\normalsize
+%\input{dicatoria.tex}
+%\newpage}
+
+%{\normalsize
+%\input{resumen.tex}
+%\newpage}
+
+
+
+\linespread{1.75}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+{\normalsize
+\input{../Introduccion/capituloIntroduccion.tex}}
+%\newpage}
+
+{\normalsize
+\input{../SistemaFisico/capituloSistemaFisico.tex}}
+%\newpage}
+
+{\normalsize
+\input{../Metodologia/capituloMetodologia.tex}}
+%\newpage}
+
+{\normalsize
+\input{../Resultados/capituloResultados.tex}}
+%\newpage}
+
+{\normalsize
+\input{../Conclusion/capituloConclusion.tex}}
+%\newpage}
+
+%{\normalsize
+%\input{conclusiones.tex}
+%\newpage}
+
+%\appendix
+%{\normalsize
+%\input{apendice2.tex}
+%\newpage}
+
+%{\normalsize
+%\input{bibliografia.tex}
+%}
+\bibliographystyle{jtbnew}
+\bibliography{../bibliografia2}
+
+\end{document}

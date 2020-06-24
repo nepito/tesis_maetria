@@ -1,0 +1,34 @@
+\select@language {spanish}
+\contentsline {chapter}{Lista de Figuras}{\es@scroman {iii}}
+\contentsline {chapter}{Lista de Tablas}{1}
+\contentsline {chapter}{\numberline {1}Introducci\'on}{3}
+\contentsline {section}{\numberline {1.1}La relevancia de los Lant\'anidos}{3}
+\contentsline {subsection}{\numberline {1.1.1}Estudios experimentales de la hidrataci\'on de los lant\'anidos}{4}
+\contentsline {subsection}{\numberline {1.1.2}Estudios te\'oricos de la hidrataci\'on de los lant\'anidos}{5}
+\contentsline {section}{\numberline {1.2}Objetivos}{7}
+\contentsline {subsection}{\numberline {1.2.1}Objetivo General}{7}
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Particulares}{7}
+\contentsline {chapter}{\numberline {2}Lant\'anidos$^{3+}$, mol\'eculas de agua e hidrataci\'on.}{9}
+\contentsline {section}{\numberline {2.1}Lant\'anidos}{9}
+\contentsline {section}{\numberline {2.2}Mol\'ecula de Agua}{11}
+\contentsline {section}{\numberline {2.3}Hidrataci\'on de Iones}{12}
+\contentsline {section}{\numberline {2.4}Mecanismo de Intercambio}{13}
+\contentsline {chapter}{\numberline {3}Metodolog\'ia}{17}
+\contentsline {section}{\numberline {3.1}C\'alculos cu\'anticos en fase gaseosa}{17}
+\contentsline {subsection}{\numberline {3.1.1}M\'etodo Hartree-Fock}{18}
+\contentsline {subsection}{\numberline {3.1.2}Pseudopotenciales}{20}
+\contentsline {subsection}{\numberline {3.1.3}M\'etodos Post Hartree-Fock}{23}
+\contentsline {subsubsection}{MP2}{23}
+\contentsline {subsubsection}{SCS-MP2}{24}
+\contentsline {subsubsection}{DFT}{25}
+\contentsline {section}{\numberline {3.2}Medio Polarizable Continuo}{25}
+\contentsline {section}{\numberline {3.3}Algoritmos gen\'eticos}{27}
+\contentsline {subsection}{\numberline {3.3.1}Selecci\'on}{28}
+\contentsline {subsection}{\numberline {3.3.2}Reproducci\'on}{28}
+\contentsline {subsection}{\numberline {3.3.3}Mutaci\'on}{29}
+\contentsline {subsection}{\numberline {3.3.4}Evaluaci\'on de la aptitud}{30}
+\contentsline {subsection}{\numberline {3.3.5}Validaci\'on del AG}{30}
+\contentsline {chapter}{\numberline {4}Resultados}{31}
+\contentsline {section}{\numberline {4.1}Informaci\'on Geom\'etrica}{31}
+\contentsline {section}{\numberline {4.2}N\'umero de coordinaci\'on de la primera capa de hidrataci\'on}{35}
+\contentsline {chapter}{\numberline {5}Conclusi\'on}{37}

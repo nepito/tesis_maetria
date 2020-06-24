@@ -1,0 +1,185 @@
+%Resultados de los valores de las energ\'ias obtenidas con AG.
+%Resultados de la tabla: CalCua/Calculos/CalCua/Energias
+Sistem\'aticamente los valores de las energ\'ias SCS-MP2 son menos
+estables que los valores de las energ\'ias MP2. 
+
+%Solo c\'alculos hechos con Gaussian
+La diferencia en la estabilidad va creciendo mientras se avanza en la
+serie de los lant\'anidos teniendo la menor diferencia en el Lantano 
+y la mayor en el Lutecio. Tambi\'en la diferencia aumenta cuando el
+n\'umero de aguas en la primera esfera de hidrataci\'on decrece. 
+%Hablando de las enrg\'ias $\alpha\alpha$ y $\alpha\beta$
+La diferencia entre las magnitudes de las energ\'ias $\alpha\alpha$
+y $\alpha\beta$ aumentan conforme la serie de los lant\'anidos avanza
+pero disminuye para un mismo lant\'anido cuando disminuye el n\'umero
+de mol\'eculas de agua en la primera capa de hidrataci\'on.
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm,angle=0]{../../../CalCua/Calculos/CalCua/VALIDACION/cSCS/Figuras/LaEneSCS.eps}
+\caption{\small{Gr\'afica de las distancias promedio La-O para los
+diferentes niveles de c\'alulo y diferentes optimizadores. Los 
+c\'alculos hechos con AG son los que tienen la primera letra del 
+s\'imbolo escrita en mayuscula y los hechos con el optimizador de 
+Gaussian est\'a escrito en min\'uscula.}}
+\label{fig11}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm,angle=0]{../../../CalCua/Calculos/CalCua/VALIDACION/cSCS/Figuras/LaEneASCS.eps}
+\caption{\small{Gr\'afica de las distancias promedio La-O para los
+diferentes niveles de c\'alulo y diferentes optimizadores. Los 
+c\'alculos hechos con AG son los que tienen la primera letra del 
+s\'imbolo escrita en mayuscula y los hechos con el optimizador de 
+Gaussian est\'a escrito en min\'uscula.}}
+\label{fig111}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+
+%Resultados obtenidos con Algoritmos gen\'eticos
+Cuando para los c\'alculos de las mol\'eculas de agua se utiliza la
+base 6-31G* la tendencia se repite, es decir, la energ\'ia MP2 es 
+m\'as estable que la energ\'ia SCS-MP2 y la diferencia entre ellas
+aumenta conforme aumenta la serie de los lant\'anidos y para un mismo
+lant\'anido la diferenica aumenta cuando el n\'umero de mol\'eculas 
+de agua en la primera esfera disminuye.%Al parecer los resultados son
+%independientes de la base que se utiliza para el agua.
+ Adem\'as, cuando se optimiza utilizando un medio polarizable continuo
+con la finalidad de agregar los efectos de bulto, la diferencia entre
+las energ\'ias MP2 y SCS-MP2 es mayor para cada uno de los casos
+que su contraparte cuando no se utiliza el PCM. Tambi\'en la 
+tendencia de la diferencia entre las energ\'ias $\alpha\alpha$ y
+$\alpha\beta$ se mantiene: aumenta cuando se avanza en la serie de
+los lant\'anidos y para un mismo miembro de la serie, la diferencia
+disminuye cuando en n\'umero de mol\'eculas de agua es menor en la
+primera capa de hidrataci\'on, pero la proporci\'on que diminuye la 
+diferencia es m\'as peque\~na que la que se observa con la base
+AUG-cc-pVDZ. Al agregar PCM se repite el comportamiento general, la 
+diferencia es mayor cuando se avanza en la serie y {\it revisar:} menor cuanto menor
+sea el n\'umero de aguas en la primera esfera para un sistema dado, 
+con dos diferencias, la disminuci\'on de la diferencia al pasar de un
+sistema de m\'as mol\'eculas a otro con menos mol\'eculas es mayor 
+que el observado cuando no de usa PCM y para Lutecio con nueve agua en
+la primera capa con PCM la diferencia aumenta.
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm,angle=0]{../../../CalCua/Calculos/CalCua/VALIDACION/cSCS/Figuras/GdEneSCS.eps}
+\caption{\small{Gr\'afica de las distancias promedio La-O para los
+diferentes niveles de c\'alulo y diferentes optimizadores. Los 
+c\'alculos hechos con AG son los que tienen la primera letra del 
+s\'imbolo escrita en mayuscula y los hechos con el optimizador de 
+Gaussian est\'a escrito en min\'uscula.}}
+\label{fig12}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm,angle=0]{../../../CalCua/Calculos/CalCua/VALIDACION/cSCS/Figuras/GdEneASCS.eps}
+\caption{\small{Gr\'afica de las distancias promedio La-O para los
+diferentes niveles de c\'alulo y diferentes optimizadores. Los 
+c\'alculos hechos con AG son los que tienen la primera letra del 
+s\'imbolo escrita en mayuscula y los hechos con el optimizador de 
+Gaussian est\'a escrito en min\'uscula.}}
+\label{fig121}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+% Los mismos resultados pero ahora con PCM pero usando AG.
+La tendencia en los resultados obtenidos con AG es la misma a los
+obtenidos cuando se utiliza el optimizador de Gaussian: energ\'ias 
+MP2 m\'as estables que las energ\'ias SCS-MP2. Incremento en la 
+diferencia de la estabilidad cuando la serie avanza, mientras el
+n\'umero de mol\'eculas de agua en la primera capa disminuye o cuando
+para un mismo sistema (lant\'anido y n\'umero de mol\'eculas de agua
+en la primera capa iguales) pero se utiliza el PCM para simular los
+efectos de bulto. Los mismo ocurre con la tendencia en la diferencia 
+de energ\'ia $\alpha\alpha$ y $\alpha\beta$.
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm,angle=0]{../../../CalCua/Calculos/CalCua/VALIDACION/cSCS/Figuras/LuEneSCS.eps}
+\caption{\small{Gr\'afica de las distancias promedio La-O para los
+diferentes niveles de c\'alulo y diferentes optimizadores. Los 
+c\'alculos hechos con AG son los que tienen la primera letra del 
+s\'imbolo escrita en mayuscula y los hechos con el optimizador de 
+Gaussian est\'a escrito en min\'uscula.}}
+\label{fig13}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm,angle=0]{../../../CalCua/Calculos/CalCua/VALIDACION/cSCS/Figuras/LuEneASCS.eps}
+\caption{\small{Gr\'afica de las distancias promedio La-O para los
+diferentes niveles de c\'alulo y diferentes optimizadores. Los 
+c\'alculos hechos con AG son los que tienen la primera letra del 
+s\'imbolo escrita en mayuscula y los hechos con el optimizador de 
+Gaussian est\'a escrito en min\'uscula.}}
+\label{fig131}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+%Comparaci\'on de las energ\'ias SCS-MP2 y MP2 cuando se optimiza 
+%SCS.
+Cuando las energ\'ias de optimizaci\'on son las SCS-MP2 es decir
+cuando se busca minimizar la energ\'ia SCS-MP2 en lugar de la MP2, la
+diferencia entre las energ\'ias SCS-MP2 y las energ\'ias MP2 es menor
+con respecto a las diferencias de energ\'ias cuando la optimizaci\'on
+es MP2, pero las energ\'ias MP2 siguen siendo m\'as estables a 
+aquellas en la misma configuraci\'on pero SCS-MP2. La tendencia sigue
+siendo la misma, la diferencia crece, mientras se avanza en la serie
+de los lant\'anidos y para un mismo lant\'anido la la diferencia 
+crece cuando el n\'umero de mol\'eculas de agua en la primera capa de
+hidrataci\'on disminuye. Para el caso de las diferencias entre las
+energ\'ias $\alpha\alpha$ y $\alpha\beta$ se repiten los resultados
+encontrados en los casos anteriores.
+
+%Comparaci\'on de los efectos de la optimizaci\'on SCS-MP2 en las 
+%energ\'ias SCS-MP2 y MP2 con respecto a los efecto de la 
+%optimizaci\'on MP2.
+Cuando se compara la diferencia de las energ\'ias SCS-MP2 y MP2 de
+las configuraciones optimizadas MP2 y aquellas SCS-MP2 ambas usando
+AG como optimizador, se encuentra que las diferencias entre las 
+energ\'ias son mayores cuando solo se optimiza MP2, sin importar el
+lant\'anido con el que se trabaje o el n\'umero de mol\'eculas de 
+agua en la primera capa de hidrataci\'on. El mismo comportamiento es 
+encontrado con las energ\'ias $\alpha\alpha$ y $\alpha\beta$. Cuando
+se compara las diferencias de las energ\'ias SCS-MP2 y MP2 de las 
+optimizadas MP2 y aquellas SCS-MP2, estas usando AG y aquellas el 
+optimizador de Gaussian, otra vez la diferencia m\'as grande se 
+encuentra con las optimizaciones hechas a nivel MP2 y lo mismo para
+las energ\'ias $\alpha\alpha$ y $\alpha\beta$. Comparando las 
+diferecnias de las energ\'as $\alpha\alpha$ y $\alpha\beta$ de las
+configuraciones optimizadas con los tres m\'etodos la mayor 
+diferencia es encontrada en las optimizaciones MP2 utilizando 
+Gaussian mientras que las optimizaciones hechas con AG las 
+diferencias son mucha m\'as cercanas entre s\'i que lo que son a la
+obtenida por Gaussian, pero en las diferencia entre las energ\'ias
+MP2 y SCS-MP2 las diferencias m\'as cercanas son las optimizaciones
+MP2, excepto para el sistema La9+0.
+
+%Las diferencias con PCM
+En las optimizaciones utilizando PCM las diferencias entre las 
+energ\'ias MP2 y SCS-MP2 siguen el mismo patr\'on las menores 
+diferencias se obtienen en las cofiguraciones optimizadas a nivel 
+SCS-MP2, aumentando mientras se avanza en la serie o se diminuye el
+n\'umero de mol\'eculas de agua en la primera capa de hidrataci\'on.
+En el caso de las diferencias de las energ\'ias $\alpha\alpha$ y
+$\alpha\beta$ las diferencias crece cuando se avanza en la serie de
+lant\'anidos y es muy parecida en el caso de las optimizaciones 
+hechas con AG. %¿Se le puede atribuir esto al hecho de que las 
+%optimizaciiones no se realice a nivel HF? 
+
+%Efecto en las distancias del SCS
+El efecto en las distancias de la optimizaci\'on SCS-MP2 es la de 
+obtener distancias m\'as grandes que aquellas obtenidas cuando se usa
+la energ\'ia MP2 como criterio de optimizaci\'on sin importar si las
+configuraciones son logradas con Gaussian o con AG. Esto ocurre para
+los tres lant\'anidos y para las dos situaciones del n\'umero de
+mol\'eculas de agua en la primera capa de hidrataci\'on. Cuando se
+agraga los efectos del bulto los resultados son los mismos la 
+optimizaci\'on SCS-MP2 proporciona distancias promedio m\'as largas.

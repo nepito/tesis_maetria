@@ -1,0 +1,30 @@
+\documentclass[onecolumn,oneside]{article}
+\usepackage{Resultados}
+
+\title{\vspace{-2cm}{\LARGE {\bf Universidad Nacional Aut\'onoma de M\'exico}}\\ 
+{\large Seminario de Tesis}\\
+\vspace{0cm}
+Resultados\\ 
+\vspace{0cm}}
+\author{
+Braulio Joel Rojas Mayoral\vspace{0cm}} 
+\date{{\small Abril de 2013}}
+\makeindex
+\begin{document}
+\input{guionado.tex}
+\maketitle
+\pagenumbering{roman}
+%\tableofcontents
+\renewcommand\tablename{Tabla}
+%\listoftables
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+{\normalsize
+\input{resultadosTXT.tex}}
+
+\bibliographystyle{jtbnew}
+\bibliography{../bibliografia2}
+
+\end{document}

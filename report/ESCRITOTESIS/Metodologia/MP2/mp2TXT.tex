@@ -1,0 +1,179 @@
+\subsection{M\'etodos Post Hartree-Fock}
+%{\it Introducci\'on a los m\'etodos post-Hartree}
+
+%\paragraph{Breve Introducci\'on}
+Los c\'alculos confiables de las energ\'ias electr\'onicas de mol\'eculas
+requieren un tratamiento preciso de los efectos de muchas 
+part\'iculas (correlaci\'on electr\'onica). El d\'ia de hoy, los 
+qu\'imicos tiene una amplia diversidad de t\'ecnicas con diferentes 
+costos y precisiones a su disposici\'on, la cual no solo es usada 
+para los c\'alculos de las energ\'ias absolutas sino tambi\'en
+relativas y otras propiedades de las mol\'eculas \citep{Grim2003}. 
+
+%\paragraph{M\'etodos del presente trabajo}
+En el presente trabajo, la energ\'ia de correlaci\'on fue tratada con
+tres diferentes m\'etodos: teor\'ia de perturbaci\'on de varios 
+cuerpos de M\o ller-Plesset (MP2), el m\'etodo emp\'irico original de 
+los componentes de esp\'in escalados (SCS) y la teor\'ia del 
+funcional de la densidad; los cuales son brevemente explicados a 
+continuaci\'on.
+
+\subsubsection{MP2}
+%\paragraph{Introducci\'on a MP2}
+Antes del uso masivo de la teor\'ia del funcional de la densidad, 
+en los a\~nos ochentas y noventas del siglo pasado, la teor\'ia de 
+perturbaci\'on de segundo orden de M\o ller-Plesset (MP2) era el
+\'unico m\'etodo de estructura electr\'onica practicable para 
+sistemas grandes, de muchas part\'iculas, que incluyera los efectos
+de correlaci\'on electr\'onica en una manera razonable 
+\citep{Grim2012}.
+
+%\paragraph{Caricatura del M\'etodo}
+MP2 es un m\'etodo basado en la teor\'ia de perturbaci\'on, su 
+finalidad es dar un tratamiento a sistemas de $n$ electrones en el
+cual la soluci\'on Hartree-Fock aparece como la aproximaci\'on de 
+orden cero. Esto se muestra desarrollando la correcci\'on a primer
+orden y observando que para la energ\'ia y la densidad de carga es 
+cero. La expresi\'on para la correcci\'on a segundo orden para la 
+energ\'ia se simplifica de gran manera gracias a las propiedades 
+especiales de la soluci\'on de orden cero \citep{Moll1934}. La 
+correcci\'on a segundo orden de la energ\'ia es
+\be\label{ce2omp2}
+E^{(2)}_0=\sum^{\infty}_{b=a+1}\sum^{\infty}_{a=j+1}
+          \sum^{n}_{j=i+1}\sum^{n-1}_{i=1}
+					\frac{|\langle ab|r^{-1}_{12}|ij\rangle-
+					       \langle ab|r^{-1}_{12}|ji\rangle|^2}
+					{\epsilon_i+\epsilon_j-\epsilon_a-\epsilon_b}.
+\ee
+La energ\'ia de correlaci\'on puede ser rigurosamente separada en dos
+contribuciones  de pares de electrones con el mismo esp\'in (ss) y 
+con esp\'in opuesto (op), los cuales son tratados de la misma manera
+en el m\'etodo tradicional MP y agregan una energ\'ia de 
+correlaci\'on total
+\be\label{ecs}
+E_c=E^{ss}_{c}+E^{op}_c=E^{(2)}_0,
+\ee
+donde
+\be
+E^{ss}_c=\frac{1}{2}\sum_{ij}e_{ij}+\frac{1}{2}\sum_{\bar i\bar j}
+e_{\bar i\bar j},
+\ee
+\be
+E^{os}_{c}=\sum_{i\bar j}e_{i\bar j}.
+\ee
+
+Aqu\'i los electrones con esp\'in $\beta$ son identificados con una 
+barra sobre el \'indice. Los valores $e_{ij}$ son definidos como
+\be\label{defeij}
+e_{ij}=\sum_{ab}(T^{ab}_{ij}-T^{ba}_{ij})(ia|jb)
+\ee
+y de una manera equivalente se definen 
+$e_{\bar i\bar j}$ y 
+$e_{i\bar j}$. 
+En el sistema de trabajo de la teor\'ia de perturbaciones 
+M\o ller-Plesset  $T$, en la ecuaci\'on (\ref{defeij}), es la 
+amplitud de la funci\'on de onda corregida a primer orden, donde 
+$\epsilon$ representa la energ\'ia del orbital can\'onico $HF$
+\be\label{defT}
+T^{ab}_{ij}=\frac{ (ia|jb)}{\epsilon_i+\epsilon_j-
+\epsilon_a-\epsilon_b},
+\ee
+donde tanto en (\ref{defeij}) como en (\ref{defT}) se us\'o la 
+notaci\'on de Mulliken
+\be\label{defnM}
+(ia|jb)=\langle ab|r^{-1}_{12}|ij\rangle.
+\ee
+Entonces, utilizando (\ref{defeij}) y sus equivalentes para 
+$e_{\bar i\bar j}$ y 
+$e_{i\bar j}$ en (\ref{ecs}) y se sustituye (\ref{defeij}) y 
+(\ref{defT}) se recupera la ecuaci\'on (\ref{ce2omp2}). 
+%\paragraph{Algunos Problemas con MP2}
+%{\it Informaci\'on del art\'iculo de} \cite{Olse1996,Grim2012,Geer2003}
+%{\it Buscar informaci\'on en los libros que ya revis\'e...y del 
+%art\'iculo original de} \cite{Moll1934}.
+
+
+
+El m\'etodo MP2 es considerado ser menos preciso comparado con los
+mejores m\'etodos de funcionales de la densidad, por ejemplo B3LYP 
+\citep{Grim2003} y adem\'as no ser tan robusto cuando es aplicado a
+problemas complicados de correlaci\'on que ocurren en estados de 
+transici\'on o en componentes que contengan metales. Adem\'as, se ha
+encontrado que la convergencia de las series M\o ller-Plesset depende
+en gran medida en el conjunto bases de un electr\'on y, en algunos 
+casos, al agregar funciones bases difusas, las series se comportan de
+manera divergente, aun para sistemas dominados por su configuraci\'on
+{\it simple} \citep{Olse1996}, se sabe que los problemas de 
+convergencia en las series M\o ller-Plesset aparecen en conjuntos de 
+bases extendidas. Con la intenci\'on de incrementar la precisi\'on 
+del m\'etodo MP2 en los casos problem\'aticos y mantener sus 
+propiedades m\'as atractivas \cite{Grim2003} implement\'o una 
+parametrizaci\'on en las contribuciones del esp\'in, el m\'etodo 
+SCS-MP2.
+
+\subsubsection{SCS-MP2}
+%{\it Agregar informaci\'on de }\cite{Grim2003} {\it y buscar m\'as
+%art\'iculos en SCPUs para intentar debatir su utilizaci\'on.}
+
+%\paragraph{Introducci\'on SCS-MP2}
+El m\'etodo de los componentes escalados del esp\'in (SCS, por sus 
+siglas en ingl\'es) conserva las caracter\'isticas deseables del 
+tradicional MP2 (consistencia de tama\~no, invariante ante rotaciones
+orbitales, simplicidad computacional) para tratar la correlaci\'on 
+electr\'onica, mientras mejora su precisi\'on general a un nivel en 
+el que es competitivo a los DFT contempor\'aneos. Los m\'etodos SCS 
+se establecieron como m\'etodos robustos de estructura electr\'onica 
+en qu\'imica cu\'antica desde su desarrollo hace m\'as de diez 
+a\~nos. Por ejemplo, SCS-MP2 es rutinariamente usado para problemas 
+de los estados bases cuando se sabe que los m\'etodos DFT fallan.
+
+%\paragraph{Teor\'ia de SCS-MP2}
+
+
+\subsubsection{DFT}
+%{\it Agrgar la informaci\'on de }\cite{Geer2003}
+%\paragraph{Introducci\'on DFT}
+La teor\'ia del funcional de la densidad (DFT, por sus siglas en 
+ingl\'es) proporcion\'o una base para el desarrollo de estrategias
+computacionales para obtener informaci\'on  acerca de las energ\'ias,
+las estructuras y las propiedades de las mol\'eculas a un costo 
+computacional mucho menor que las t\'ecnicas de funci\'on de onda
+(WFT) \citep{Geer2003}. La forma funcional necesaria para describir 
+el intercambio y correlaci\'on no puede ser derivada de primeros 
+principios, por lo que DFT no es un m\'etodo {\it ab initio} puro, 
+sin embargo, puede lograr la precisi\'on de estos m\'etodos y 
+puede ser usado en sistemas mucho m\'as grandes \citep{Bere2007}.
+
+%\paragraph{Sustento te\'orico}
+Los m\'etodos DFT est\'an basados en los famosos teoremas de 
+\cite{Hohe1964} y la idea b\'asica es que la densidad de carga
+electr\'onica, $\rho(\vec r)$, en cada punto $\vec r$ determina el 
+estado base exacto de la funci\'on de onda y la energ\'ia de un 
+sistema de electrones.
+
+%\paragraph{Caricatura de DFT}
+Los funcionales actualmente usados no tiene una correcci\'on a  la
+auto interacci\'on, debido a esto, los funcionales usualmente 
+disponibles dan curvas $U(R)$ muy incorrectas a grandes distancias
+internucleares para iones radicales sim\'etricos y sobrestiman la 
+interacci\'on intermolecular en algunos complejos de transferencia de
+carga \citep{Levi2001}. Si se conoce la densidad electr\'onica del
+estado fundamentas $\rho_0(\vec r)$, el teorema de Hohenberg-Kohn dice
+que es posible calcular todas las propiedades moleculares del estado 
+fundamental a partir de $\rho_0$ sin necesidad de obtener la funci\'on
+de onda molecular. El teorema de Hohenberg-Khon no dice c\'omo 
+calcular $E_0$ a partir de $\rho_0$, ni tampoco c\'omo obtener 
+$\rho_0$ sin obtener primeramente la funci\'on de onda.  Khon y Sham
+idearon  un m\'etodo pr\'actico para obtener $\rho_0$ y para obtener 
+$E_0$ a partir de $\rho_0$. Este m\'etodo es capaz, en principio, de
+obtener  resultados exactos, pero debido a que las ecuaciones del 
+m\'etodo de Khon-Sham contienen un funcional desconocido que debe 
+aproximarse, la formulaci\'on da lugar a resultados aproximados.
+
+%\paragraph{Problema con DFT}
+El teorema variacional de Hohenberg-Kohn dice que se puede obtener la
+energ\'ia del estado fundamental variando $\rho_0$ de forma que 
+minimice el funcional $E(\rho)$. La falta de un procedimiento 
+sistem\'atico para mejorar $E_{ci}$ y, por lo tanto, para mejorar las
+propiedades moleculares calculadas, es el principal inconveniente del 
+m\'etodo.

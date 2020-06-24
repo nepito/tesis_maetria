@@ -1,0 +1,12 @@
+sed "s/\\\'a/á/g" $1 > aux.$1 
+sed "s/\\\'A/Á/g" aux.$1 -i
+sed "s/\\\'e/é/g" -i aux.$1 
+sed "s/\\\'E/É/g" -i aux.$1 
+sed "s/\\\'i/í/g" -i aux.$1 
+sed "s/\\\'I/Í/g" -i aux.$1 
+sed "s/\\\'o/ó/g" -i aux.$1 
+sed "s/\\\'O/Ó/g" -i aux.$1 
+sed "s/\\\'u/ú/g" -i aux.$1 
+sed "s/\\\'U/Ú/g" -i aux.$1 
+sed "s/\\\~n/ñ/g" -i aux.$1 
+sed "s/\\\~N/Ñ/g" -i aux.$1 

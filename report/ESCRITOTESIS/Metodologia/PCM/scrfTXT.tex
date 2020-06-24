@@ -1,0 +1,128 @@
+% Levine Qu\'imica Cu\'antica pp 584
+Quiz\'as la v\'ia m\'as com\'un para calcular los efectos del 
+disolvente es usar un {\it modelo de disolvente continuo}. Aqu\'i, la
+estructura del disolvente se ignora, y el disolvente se modela como 
+un diel\'ectrico continuo de extensi\'on infinita, que rodea una 
+cavidad que contiene la mol\'ecula de soluto M. El diel\'ectrico 
+continuo se carecteriza por su constante diel\'ectrica. La mol\'ecula
+de soluto puede tratarse cl\'asicamente como un conjunto de cargas
+que interact\'uan con el diel\'ectrico o puede tratarse 
+mecanocu\'anticamente. En el tratamiento mecanocu\'antico, la 
+interacci\'on entre una mol\'ecula de soluto M y el continuo 
+diel\'ectrico que la rodea, se modela mediante un t\'ermino 
+$\hat V_{int}$ que se a\~nade al Hamiltoniano electr\'onico molecular
+(de nucleos fijos) $\hat H^{(0)_M}$, donde $\hat H^{(0)_M}$ es para M
+en el vac\'io.
+
+En la implementaci\'on mecanocu\'antica usual del modelo de 
+solvataci\'on continuo, se permite que cambien la funci\'on de onda
+electr\'onica y la densidad de probabilidad electr\'onica de la 
+mol\'ecula de soluto M al pasar de fase gaseosa a fase disoluci\'on,
+de forma que se alcance la autoconsistencia entre la distribuci\'on
+de carga M y el campo de reacci\'on del disolvente. Cualquier 
+tratamiento en el que se alcance la autoconsistencia, se denomina
+modelo de {\it campo de reacci\'on autoconsistente}.
+
+\paragraph{El m\'etodo PCM} Los c\'alculos ab initio precisos de los 
+efectos del disolvente requieren el uso de formas moleculares m\'as 
+realistas que las formas esf\'ericas o elipsoidales. En el {\it 
+modelo del continuo polarizable} (PCM) de Miertus, Scrocco y Tomasi, 
+cada n\'ucleo at\'omico de la mol\'ecula de soluto, M, est\'a rodeado
+por una esfera de radio 1.2 veces el radio de van der Waals del 
+\'atomo. La regi\'on de la cavidad se toma como el volumen ocupado 
+por esas esferas at\'omicas solapantes.
+
+\paragraph{ASC} Ya que la cavidad PCM tiene una forma compleja, no se
+pueden obtener expresiones anal\'iticas para el coeficiente de la
+expansi\'on multipolar, y el m\'etodo de expansi\'on multipolar 
+anal\'itico no es factible. En su lugar se usa un m\'etodo num\'erico
+para obtener el t\'ermino de la energ\'ia potencial de interacci\'on
+soluto-disolvente, $\hat V_{int}$. Se puede demostrar a partir de la
+electrost\'atica cl\'asica, que el potencial el\'ectrico 
+$\Rho_{\sigma}$ producido por el continuo diel\'ectrico polarizado es
+igual al potencial de una {\it carga superficial aparente} (ASC) 
+distribuida sobre la superficie de la cavidad molecular. La ASC es 
+una distribuci\'on continua de carga caracterizada por la densidad 
+de carga superficial (carga por unidad de \'area de la superficie) 
+que var\'ia de un punto a otro de la superficie de la cavidad. En la
+pr\'actica, esta continua ASC se aproxima reemplazandola por muchas
+cargas puntuales, y la carga aparente $Q_k$ se situa en la regi\'on
+$k-$\'esima. Si $\vec r_k$ es el punto en el que est\'a localizada
+$Q_k$, entonces el potencial el\'ectrico $\phi_{\sigma}(\vec r)$ 
+debido a la polarizaci\'on  del diel\'ectrico es (en unidades 
+at\'omicas)
+\be
+\phi_{\sigma}(\vec r)=\sum_k\frac{Q_k}{|\vec r-\vec r_k|}.
+\ee
+
+% \paragraph{Ecuaciones PCM}
+% La electrost\'atica cl\'asica de las siguientes expresiones para 
+% las cargas aparentes:
+% $$Q_k=[(\epslon_r-1)/4\pi\epsilon_r]A_k\nabla\phi_{int}(\vec r_k)
+% \cdot \vec n_k$$
+% donde $A_k$ es el \'area de la regi\'on $k-$\'esima, $\vec r_k$ es
+% el punto en el que $Q_k$ est\'a localizada, $\nabla\phi_{int}
+% (\vec r_k)$ es el gradiente del potencial el\'ectrico con la 
+% cavidad evaluada en el l\'imite cuando el punto $\vec r_k$ se 
+% aproxima, y $\vec n_k$ es un vector unitario perpendicular a la
+% superficie de la cavidad en $\vec r_k$ y apuntando hacia afuera de
+% la cavidad. [El gradiente de $\phi$ es dicintinuo en la superficie
+% de la cavidad, de forma que es necesario distinguir 
+% \nabla\phi_{int} de \nabla\phi_{ex}.] El potencial el\'ectrico en 
+% la cavidad es la suma de la contribuci\'on $\phi_{M,int}$ de la
+% distribuci\'on de carga de la mol\'ecula de soluto M y de la
+% contribuci\'on $\phi_{\sigma,int}$ de diel\'ectrico polarizado:
+% $\phi_{int}=\phi_{M,int}+\phi_{\sigma,int}$.
+
+% \paragraph{Receta PCM} 
+% Ya que ni $\phi_{int}$ ni $Q_k$ se conocen inicialmente, las cargas
+% superficiales aparentes se obtienen mediante el siguiente proceso
+% iterativo. Inicialmente, se desprecia $\phi_{\sigma,int}$, y se 
+% toma la estimaci\'on inicial de $\phi_{int}$ como 
+% $\phi^{(00)}_{int}$=$\phi^{(0)}_{M,int}$, donde 
+% $\phi^{(0)}_{M,int}$ se calcula a partir de la densidad 
+% electr\'onica $\rho^{(0)}$ de la mol\'ecula M en el vac\'io. 
+% [$rho^{(0)}$ se obtiene a partir de la funci\'on de onda, o, en 
+% DFT, a partir de los orbitales de Kohn-Sham de M en el vac\'io.
+% N\'otese que $\phi^{(0)}_{M}$ es el potencial electrost\'atico
+% molecular de la ecuaci\'on
+% $$\phi(x_1,y_1,z_1)=\Sum_{\alpha}\frac{Z_{\alpha}e}{4\pi
+% \epsilon_0r_{1\alpha}}-e\int\int\int\frac{\rho(x_2,y_2,z_3)}{4\pi
+% \epsilon_0r_{12}}dx_2dy_2dz_2].$$ Entonces, se usa la \'ultima
+% ecuaci\'on para obtener las estimaciones iniciales de 
+% $Q^{(00)}_{k}$ del ASC, que se usa en (15.147) para encontrar una
+% estimaci\'on  inicial $\phi^{(00)}_{\sigma,int}$ del potencial 
+% el\'ectrico producido por el diel\'ectrico polarizado. El potencial
+% mejorado $\phi^{(01)}_{int}=\phi^{(0)}_{M,int}+
+% \phi^{(00)}_{\sigma,int}$, se usa en (15.148) para obtener cargas
+% mejoradas $Q^{(01)}_k$, que se usan en (15.147) para obtener 
+% $\phi^{(01)}_{\sigma,int}$, y as\'i sucesivamente. Se contin\'ua
+% iterando hasta que las cargas convergen en los valores 
+% $Q^{(0f)_k}$.
+
+\paragraph{Iteraci\'on en PCM} Los valores de las cargas que han
+alcanzado la convergencia se usan para obtener una estimaci\'on 
+inicial del $\hat V_{int}$ como
+$$\hat V^{(0)}_{int}=-\sum_i\phi^{(0f)}_{\sigma}(\vec r_i)+
+\sum_{\alpha}Z_{\alpha}\phi^{(0f)}_{\sigma}(\vec r_{\alpha})$$ 
+donde las sumas se extienden a todos los electrones y n\'ucleos, y
+$\phi^{(0f)}_{\sigma}$ se obtiene a partir de (15.147), usando los
+$Q^{(0f)}_k$. Se a\~nade $\hat V^{(0)}_{int}$ al Hamiltoniano 
+electr\'onico molecular, que se usa para obtener una densidad 
+electr\'onica mejorada $\rho^{(1)}$ para M, que da 
+$\phi^{(1)}_{M,int}$, que a su vez da el potencial mejorado
+$\phi^{(10)}_{int}=\phi^{(1)}_{M,int}+\phi^{(0f)}_{\sigma,int}$, que
+se usa en (15.148) para comenzar un nuevo ciclo de iteraciones de 
+carga y de $\phi_{\sigma}$. Se contin\'ua hasta que todo alcanza la
+convergencia.
+
+%AngyanJMathChem1992.10.93.pdf
+Muchos modelos semiemp\'iricos y ab initio han sido propuestos en los
+\'ultimos 45 a\~nos. Estos modelos a veces parecen ser diferentes 
+aunque es ampliamente aceptado que el modelo f\'isico b\'asico en 
+todos los casos es la idea del campo de reacci\'on, relacionada con 
+el nombre de Onsager. Este modelo supone que el sistema del soluto 
+polar, el cual est\'a embebido en el solvente, polariza sus 
+alrededores. El ambiente polarizado crea un campo, el campo de 
+reacci\'on (o de polarizaci\'on), el cual actua sobre el subsistema
+soluto.

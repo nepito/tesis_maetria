@@ -1,0 +1,99 @@
+\section*{Lant\'anidos}
+%{\it ?`Qu\'e vergas son los lat\'anidos}
+\paragraph{Breve historia de los lant\'anidos}
+Los minerales de los lant\'anidos se analizaron a mediados del siglo
+XIX. Por ejemplo, el químico finland\'es Johan Gadolin, en 1794,
+descubrío un nuevo \'oxido met\'alico (o {\it tierra}) en un 
+mineral obtenido de la cantera de Ytterby, cerca de Estocolmo, 
+Suecia. Como la nueva tierra era mucho menos com\'un que otras como 
+la sílice, caliza y magnesia, se le dio el nombre de {\it tierra 
+rara}. Quince a\~nos despu\'es se obtuvo el elemento iterbio (Yb).
+El químico sueco Carl Gustav Mosander descubri\'o las tierras
+raras lantano (La), erbio (Er), terbio (Tb) y didimio\footnote
+{Cuarenta a\~nos despu\'es, en 1885, el químico austriaco 
+Carl Auer encontr\'o que el didimio era una mezcla de dos elementos, 
+praseodimio (Pr) y neodimio (Nd).}. Lecoq de Boisbaudran descubri\'o 
+el samario (Sm), en 1879, y el disprocio (Dy) en 1886. En 1878, Cleve
+descubri\'o otros dos: holmio (Ho) y tulio (Tm). Hacia 1907, cuando 
+el químico franc\'es Georges Urbain descubri\'o la tierra rara 
+lutecio (Lu), se había descubierto ya un total de catorce de tales
+elementos \citep{Asim2010}.
+
+
+\paragraph{Configuraci\'on Electr\'onica}
+Los lant\'anidos se caracterizan por la ocupaci\'on gradual del 
+subnivel $4f$. Las energías relativas de los orbitales $nd$ y
+$(n-1)f$ son muy similares y sensibles a la ocupaci\'on de dichos
+orbitales por lo cual, la configuraci\'on electr\'onica de los 
+\'atomos neutros muestran ciertas irregularidades {\it neta ?`por 
+qu\'e?}.
+
+\paragraph{Estado de oxidaci\'on divalente}
+Aunque el estado de oxidaci\'on 3+ es el característico de los 
+lant\'anidos, tambi\'en el estado de oxidaci\'on 2+ es importante.
+Tanto Eu$^{2+}$ e Yb$^{2+}$ son las especies dipositivas m\'as 
+estables.  Estos iones est\'an estabilizados por las configuraciones
+$4f^7$ y $4f^{14}$ que gozan de especial estabilidad de los 
+subniveles llenos y semillenos (provenientes de la energía de 
+intercambio). Otros lant\'anidos forman compuestos Ln(II), los cuales
+son estables como s\'olidos y hay pruebas de que es posible hacer que
+todos los lant\'anidos formen cationes divalentes estables en una
+red cristalina que los contenga (?`d\'onde has visto esto, adem\'as 
+de en \cite{Huhe1981}).
+
+\paragraph{Estado de oxidaci\'on tetravalente}
+Los estados de oxidaci\'on superiores son poco frecuentes en los 
+lant\'anidos. El cerio forma una especie estable 4+, la cual es un 
+agente oxidante muy fuerte en soluci\'on acuosa aunque la reacci\'on
+con el agua es lo suficientemente lenta como para permitir su 
+existencia \citep{Huhe1981}.
+
+\paragraph{Orbitales $f$}
+{\it Se buscar\'a informaci\'on en:}
+\begin{itemize}
+ \item H. F. Friedman, Jr. {\it J. Chem. Educ.}, {\bf 41}, 354 
+ (1964).
+ \item Becker, {\it J. Chem. Educ.}, {\bf 41}, 358 (1964)
+ \item E. A. Ogryzlo, {\it J. Chem. Educ.}, {\bf 42}, 150 (1965).
+ \item H. F. Friedman {\it J. Chem. Educ.}, {\bf 42}, 151 (1965).
+\end{itemize}
+
+%Dangelo2012
+%En los \'ultimos díez a\~nos un creciente n\'umero de estudios 
+%dedicados, tanto experimental como te\'oricos, para el entendimiento 
+%de las propiedades de hidrataci\'on de los iones lant\'anidos en 
+%agua, y una clara descripci\'on emergía. Esto fue posible gracias 
+%al mejoramiento de las t\'ecnicas experimentales y al desarrollo de 
+%modelos te\'oricos m\'as sofisticados y realizables. 
+%\begin{itemize}
+%\item Desde un punto de vista te\'orico dos cuestiones han 
+%contribuido al entendimiento de las propiedades de hidrataci\'on de 
+%los Ln$^{III}$: el desarrollo de pseudopotenciales y el desarrollo de
+%una nueva generaci\'on de campos de fuerzas, incluyendo 
+%polarizabilidad, así que simulaciones de din\'amica molecular
+%proporcionaron resultados en acuerdo con los datos experimentales.
+%\item La espectroscopía por absorci\'on de rayos X jug\'o un papel
+%invaluable  en muchos aspectos de la hidrataci\'on de lant\'anidos, 
+%en particular en la determinaci\'on las características de la 
+%estructura de hidrataci\'on, las distancias ion-agua y el n\'umero de
+%coordinaci\'on de la primera esf\'era de hidrataci\'on. Esto fue 
+%posible gracias a la combinaci\'on de experimentos con simulaciones 
+%te\'oricas \citep{Dang2012}.
+%\end{itemize}
+
+
+%DolgTheorActa1989.pdf
+Desde el punto de vista químico los elementos de las tierras raras
+son usualmente trivalentes, menos frecuentes bivalentes (Eu e Yb) o 
+tetravelentes (Ce y Tb). Esta simple descripci\'on corresponde a la
+presencia de subconfiguraciones en mol\'eculas at\'omicas $4f^4$ 
+($n=0-14$ para La-Lu), $4f^{n+1}$ ($n=0-13$, para La-Yb) o $4f^{n-1}$
+($n=1-14$ para Ce-Lu).
+Las energías orbitales de los c\'alculos de todos los electrones HF
+sugiere que los orbitales $4f$ est\'en en el espacio de valencia, sin 
+embargo su extenci\'on espacial sugiere que ellos pueden ser 
+agregados al carozo \citep{Dolg1989}. 
+
+\paragraph{?`...y esto qu\'e pedo con los PP?}
+{\it Intentar agregar las gr\'aficas correspondientes del artículo}
+\cite{Dolg2012}

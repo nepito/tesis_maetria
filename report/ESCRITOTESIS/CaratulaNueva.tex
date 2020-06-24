@@ -1,0 +1,105 @@
+\documentclass[12pt,letterpaper,twoside,openright,BCOR=1cm]{book}
+\usepackage[spanish,english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{wrapfig}
+\usepackage[pdftex]{graphicx}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usepackage{bbm}
+\usepackage{yfonts}
+\usepackage[titletoc]{appendix}
+\newenvironment{abstract}%
+{\cleardoublepage\null\vfill\begin{center}%
+\bfseries\abstractname\end{center}}%
+{\vfill\null}
+%****************************
+%Begin definitions
+\def \lb{\hbox{$\lambda$\hskip-5pt$\raise2pt\hbox{\char'040}$\hskip1.5pt}}
+\def \lbs{\hbox{$\scriptstyle\lambda$\hskip-4pt$\raise.1pt\hbox{\char'040}$\hskip1.2pt}}
+%End definitions
+%Begin NewCommands
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\ii}{\text{i}}
+\newcommand{\ee}{\text{e}}
+\newcommand{\dd}{{\rm d}}
+\newcommand{\mtres}[9]{\left(\begin{array}{c c c}
+#1&#2&#3\\#4&#5&#6\\#7&#8&#9
+\end{array}\right)}
+\newcommand{\cuadrado}[4]{\begin{tabular}{r c l}
+#1& &#2\\
+&\begin{tikzpicture}
+\draw (0,0) rectangle(1,1);
+\end{tikzpicture}& \\
+#4& &#3\\
+\end{tabular}}
+\newcommand{\mcuatro}[4]{$\left(
+\begin{array}{c c c c}
+a&b&c&d\\
+#1&#2&#3&#4\\
+\end{array}
+\right)$}
+\newcommand{\cuatroc}[4]{$\begin{array}{|c c c c|}
+a&b&c&d\\
+#1&#2&#3&#4\\
+\end{array}$}
+\newcommand{\fracc}[2]{{\textstyle\frac{#1}{#2}}}
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\bracket}[2]{\left\langle#1|#2\right\rangle}
+\newcommand{\mdos}[4]{\left(\begin{array}{c c}
+#1&#2\\#3&#4
+\end{array}\right)}
+%End of NewCommands
+%**************************
+\begin{document}
+%*********************PORTADA**********************************
+\selectlanguage{spanish}%
+\begin{titlepage}
+%\thispagestyle{empty}
+\begin{center}
+\includegraphics[scale=.5]{unamazul.jpg}\\
+\small{\textbf{UNIVERSIDAD NACIONAL AUT\'ONOMA DE M\'EXICO}}\\
+\small{MAESTR\'IA EN CIENCIAS (F\'ISICA)}\\
+\small{INSTITUTO DE CIENCIAS F\'ISICAS}\\
+%\small{Estudio te\'orico de la hidrataci\'on de lant\'anidos 3+}\\
+\begin{verbatim}
+
+
+\end{verbatim}\\
+\small{Estudio te\'orico de la hidrataci\'on de lant\'anidos 3+}\\
+%\small{T\'ITULO DE LA TESIS O PROTOCOLO}\\
+\begin{verbatim}
+
+\end{verbatim}\\
+\small{TESIS}\\
+\small{QUE PARA OPTAR POR EL GRADO DE:}\\
+\small{MAESTRO EN CIENCIAS (F\'ISICA)}\\
+\hspace{2truecm}\\
+\small{PRESENTA:}\\
+\small{Braulio Joel Rojas Mayoral}\\
+\begin{verbatim}
+
+
+\end{verbatim}\\
+\small{Humberto Saint-Mart\'in Posada}\\
+\small{INSTITUTO DE CIENCIAS F\'ISICAS}\\
+\hspace{1truecm}\\
+\small{Remigio Cabrera Trujillo}\\
+\small{INSTITUTO DE CIENCIAS F\'ISICAS}\\
+\hspace{1truecm}\\
+\small{Alejandro Ram\'irez Sol\'is}\\
+\small{FACULTAD DE CIENCIAS}\\
+\small{UNIVERSIDAD AUT\'ONOMA DEL ESTADO DE MORELOS}\\
+\begin{verbatim}
+
+\end{verbatim}\\
+\small{M\'exico, D.\ F.\ AGOSTO 2014.}\\
+%(versi\'on del \today)
+\end{center}
+\end{titlepage}
+%*********************PORTADA**********************************
+
+\end{document}

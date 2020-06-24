@@ -1,0 +1,45 @@
+\section*{Hatree-Fock}
+Una vez que se ha construido el determinante de Slater, el siguiente
+paso es encontrar los valores de los coeficientes de la base. Esto se
+hace con el m\'etodo variacional dentro de la teor\'ia Hartree-Fock 
+(HF).
+
+F\'isicamente, la aproximaci\'on de HF desprecia la repulsi\'on 
+instantanea de los electrones. Dentro de HF, cada electr\'on 
+interactua con la distribuci\'on promedio de carga que proviene del 
+resto de los electrones. Esto significa que los electrones se ven unos
+a otros como distribuciones en lugar de part\'iculas discretas.
+Matem\'aticamente, el resultado es que el t\'ermino de repulsi\'on de 
+dos cuerpos en el hamiltoniano molecular \colorbox{Rhodamine}{se 
+reduce a un t\'ermino de un cuerpo.}
+
+Los orbitales moleculares \'optmios son los que satisfacen la 
+ecuaci\'on de Hartree-Fock (HF):
+\be\label{ehf}
+\hat F(k)\phi_i(k)=\epsilon_i\phi_i(k)
+\ee
+donde $\epsilon_i$ es la energ\'ia del orbital $i$ y $k$ representa 
+un electr\'on. El operador de Fock $\hat F$ contiene el hamiltoniano
+de un solo electr\'on: su energ\'ia cin\'etica y su energ\'ia 
+potencial con los n\'ucleos y los dem\'as electrones. \colorbox
+{Rhodamine}{La suma de estos operadores no produce el hamiltoniano 
+total porque se cuenta de m\'as las repulsiones interelectr\'onicas.} 
+\colorbox{Yellow}{Esto es una consecuencia del t\'ermino de dos 
+cuerpos, que hace que problema no sea de variables separables.} La
+aproximaci\'on SCF cambia el t\'ermino de repulsi\'on  por un 
+operador que representa el campo promedio generado por los electrones,
+y esto s\'i permite la separaci'on de variables porque todos los 
+operadores son de un cuerpo:
+$$\hat F=\hat h(k)+\hat g(k)$$
+donde $\hat h$ es el hamiltoniano para el electr\'on en el campo de 
+los n\'ucleos y $\hat g$ representa el campo promedio que el 
+electr\'on $k$experimenta debido a la presincia de los otros 
+electrones.
+
+HF-SCF no da una descripci\'on completa de la distribuci\'on 
+electr\'onica. Para efecto de los modelos que se usan para resolver 
+ecuaci\'on de Sch\"odinger, los electrones son part\'iculas e 
+interactuan como tales. Dada la repulsi\'on lectr\'onica, una 
+funci\'on de onda verdadera  debe dar una probabilidad menor de 
+encontrar un electr\'on en la vecindad de otro en cualquier instante,
+no solo en promedio.

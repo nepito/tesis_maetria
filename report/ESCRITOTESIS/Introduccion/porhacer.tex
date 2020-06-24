@@ -1,0 +1,69 @@
+%Resumen de 3.3.6 Ab Initio Potencials, p\'agina 64, de Sadus 1999.
+El potencial at\'omico por pares es un importante punto de partida de
+de predicci\'on de propiedades moleculares. Hist\'oricamente, una
+aproximaci\'on emp\'irica fue usada con los par\'ametros del
+potencial siendo obtenidos de los datos experimentales y su 
+evaluaci\'on utilizando simulaci\'on molecular es dirigida a 
+incrementar la importancia de la predicci\'on en fluido moleculares. 
+Los potenciales {\it ab initio} pueden ser una alternativa precisa a 
+los potenciales emp\'iricos. Los c\'alculos {\it ab initio} pueden 
+ser usados para determinar la interacci\'on entre \'atomos y ajustar 
+los par\'ametros de los potenciales.
+%Adem\'as un resumen del tema 6.3.9, p\'agina 183 de Berendsen 2007.
+%El \'ultimo p\'arrafo de la p\'agina 184 de Berendsen 2007, el tema 
+%la presici\'on en le campo de fuerza.
+En general, los modelos de campos de fuerza para sistemas moleculares
+no son de la calidad suficiente para para ser usado de manera 
+universal. Pero para realizar un modelo se debe tener en cuenta: la
+simplicidad, la robustes, la transferibilidad, la presici\'on y la
+compatibilidad con los c\'alculos {\it ab initio}. Idealmente, un 
+modelo del campo de fuerzas muy preciso es deseado, derivable de 
+c\'alculos cu\'anticos, debe ser construido en forma jar\'arquica, 
+por lo que el modelo debe tener aspectos separables, donde ninguna
+resultar\'a en la omisi\'on de ningun otro aspecto f\'isico. As\'i
+poder quitar t\'erminos que fluctuan del modelo principal y usar
+valores promedios en los modelos secundarios.
+%El \'ultimo p\'arrafo de pa p\'agina 187 de Berendsen 2007.
+En la simulaci\'on molecular se usan modelos de las fuerzas las deben
+ser para metrizados por ajustes de c\'alculos {\it ab initio} de alto
+nivel.
+%Revisar el tema 5 Aplicaci\'on de la metodolog\'ia a la 
+%descripci\'on de agua l\'iquida, p\'agina 134 de las memorias de la
+%VI escuela de verano. Recamier 1997.
+%Traducci\'on del art\'iculo SaintMartinJChemPhts2005.122.224509
+%Primer p\'arrafo de la discusi\'on
+Este trabajo estudio los efectos de restringir los grados de libertad
+de un modelo molecular generando cuatro versiones que corresponde a 
+la misma funci\'on de energ\'ia potencial. Manteniendo los mismos 
+par\'ametros para todos los potenciales se prueba que, con la 
+energ\'ia de interacci\'on propia, tomando la flexibilidad 
+intramolecular del agua conduce a una dram\'atica p\'erdida de la
+estructura del agua. Pero cuando el promedio de la geometr\'ia
+molecular en el l\'iquido es usada, la mol\'ecula r\'igida se 
+desempe\~na casi de manera id\'entica a la mol\'ecula restringida 
+flexible. Remover la polarizabilidad, fijando el centro de la 
+distribuci\'on de carga puede producir rasonablemente buenos 
+resultados, provistos por el dipolo molecula promedio en el l\'iquido
+es tambi\'en proporcionado. Evidentemente, el \'ultimo potencial 
+logra predicciones pobres de los agregados de agua, desde que este
+hab\'ia sido puesto en un potencial efectivo restringiendo sus 
+propiedades moleculares a los promedios en el l\'iquido en 
+condiciones ambiente. EL mismo procedimiento deber\'ia de permitir
+construir potenciales efectivos en cualquier condici\'on: despu\'es
+de obtener los promedios de propiedades moleculares de simulaciones
+cortas con un modelo completamnte flexible, esots promedios pueden 
+ser fijados y mantenidos para continuar la simulaci\'on. Esta es una
+alternativa autoconsistente para construir potenciales casados en 
+c\'alculos {\it ab initio} y propiedades de una sola mol\'ecula, sin 
+reparametrizar para cada uno de los conjuntos diferentes de las
+condiciones termodin\'amicas, y con la ventaja que incluso modelos
+simples reflejar\'an mejoras de los datos {\it ab initio} usados en
+el aprendizaje. Esto es particularmente importante para la variedad
+de sistemas moleculares para los cuales los datos experimentales son
+m\'as escasos.
+%Traducci\'on del art\'iculo HernandezJChemPhys2005.123.044506
+%Segundo p\arrafo de la conclusi\'on.
+En adisi\'on al mejoramiento de los modelos por una mayor calidad de
+datos {\it ab initio}, es decir, una superficie de energ\'ia 
+potencial m\'as precisa, los modelos son tambi\'en mejorados con 
+formas funcionales que son m\'as fieles a la descripci\'on molecular.

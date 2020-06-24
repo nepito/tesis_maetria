@@ -1,0 +1,44 @@
+En este trabajo se calculó las estructuras moleculares, las 
+energías de amarre, las energías de hidratación y las
+enrgías libres de hidratación para \lnoh con $n=7, 8, 9$, para
+la serie de los lantánidos. Los cálculos se hicieron utilizando
+los pseudopotenciales que contienen a los electrones de la capa 4f y
+los efectos relativistas son considerados mediante, el nivel de 
+teoría fue SCS-MP2 y se modeló con un medio polarizable continuo
+dieléctrico. Los resultados obtenidos pueden considerarse 
+cuantitativamente correctos ya que los números de coordinación de
+la primera capa de hidratación son las observadas en los 
+experimentos y las energías libres de hidratación están son
+cercanas a las experimentales (un 3\% de error en el peor de los 
+casos). Se encontró que las distancias promedios de los 
+lantánidos a los átomos de oxígeno son mayores a las 
+experimentales si los efectos del disolvente no son agregados, a un 
+nivel MP2, además si el nivel de cálculo es SCS-MP2 las 
+distancias dan aún mayor. Si se agrega el efecto del disolvente, 
+mediante un medio dieléctrico continuo y polarizable, las 
+distancias promedios son menores a las experimentales, a un nivel de 
+cálculo MP2. Por lo anterior se concluye que para encontrar 
+geometrías en acuerdo con los datos experimentales de una manera 
+autoconcistente, con el mismo nivel de cálculo y hamiltoniano se 
+logren tanto las distancias como los números de coordinación 
+experimentales, es necesario hacer los cálculos a nivel SCS-MP2 y
+modelando los efectos del disolvente mediante el medio dieléctrico
+continuo y polarizable. También se encontró que al agregar los
+efectos del disolventes, tanto en las geometrías optimizadas en 
+fase gas como aqeuellas optimizadas tomando en cuenta los efecctos de
+bulto al agregar el medio polarizable para ver cual es la energía 
+del sistema en esa configuración, sin volver a hacer la 
+optimización, las diferencias en las energías de los sistemas con
+diferentes números de coordinación dan diferencias energéticas
+esperadas, aunque no ocurre los mismo para las diferencias de las 
+energías libres, a menos que la geometría sea la optimizada con
+el medio polarizable. Por último se encontró que no es necesario
+utilizar los pseudopotenciales conrtos, es decir, aquellos que toman
+en cuenta los efectos de los electrones de la capa 4f de manera 
+explícita pues las distancias obtenidas no son las correctas. Lo
+mismo ocurre si se utiliza la base extendida y los efectos del 
+disolvente sin importar si el nivel de cálculo es MP2 o SCS-MP2. 
+
+%Como se muestra en las figuras \ref{fDLO2} y \ref{fDLO3} usar el 
+%Pseudopotencial corto y sus bases correspondientes da como resultado
+%distancias más cortas que las observadas en los experimentos. 

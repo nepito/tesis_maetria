@@ -1,0 +1,68 @@
+\begin{thebibliography}{13}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem[{Asimov(2010)}]{Asim2010}
+\textsc{Asimov, I.} (2010).
+\newblock \emph{Breve Historia de la Qu\'imica}, chap.~8.
+\newblock M\'exico: Alinza editorial, tercera ed., pp. 168--169.
+
+\bibitem[{Badyal \emph{et~al.}(2000)Badyal, Saboungi, Shastri, Haeffner \&
+  Soper}]{Bady2000}
+\textsc{Badyal, Y.~S., Saboungi, M.~L., Shastri, D.~L., Haeffner, D.~R. \&
+  Soper, A.~K.} (2000).
+\newblock \emph{J. Chem. Phys.} \textbf{112}, 9206.
+
+\bibitem[{Ciupka \emph{et~al.}(2010)Ciupka, Cao-Dolg, Wiebke \&
+  Dolg}]{Ciup2010}
+\textsc{Ciupka, J., Cao-Dolg, X., Wiebke, J. \& Dolg, M.} (2010).
+\newblock \emph{Phys. Chem. Chem. Phys.} \textbf{12}, 13215.
+
+\bibitem[{Clough \emph{et~al.}(1973)Clough, Beers, Klein \& Rothman}]{Clou1973}
+\textsc{Clough, S.~A., Beers, Y., Klein, G.~P. \& Rothman, L.~S.} (1973).
+\newblock \emph{J. Chem. Phys.} \textbf{59}, 2254.
+
+\bibitem[{D`Angelo \& Spezia(2012)}]{Dang2012}
+\textsc{D`Angelo, P. \& Spezia, R.} (2012).
+\newblock \emph{Chem. Eur. J.} \textbf{18}, 11162.
+
+\bibitem[{Dolg \emph{et~al.}(1989)Dolg, Stoll, Savin \& Preuss}]{Dolg1989}
+\textsc{Dolg, M., Stoll, H., Savin, A. \& Preuss, H.} (1989).
+\newblock \emph{Theor. Chim. Acta} \textbf{75}, 173.
+
+\bibitem[{Helm \& Merbach(2005)}]{Helm2005}
+\textsc{Helm, L. \& Merbach, E.} (2005).
+\newblock \emph{Chem. Rev.} \textbf{105}, 1923.
+
+\bibitem[{Huheey(1981)}]{Huhe1981}
+\textsc{Huheey, J.~E.} (1981).
+\newblock \emph{Qu\'imica Org\'anica}, chap.~16.
+\newblock M\'exico: Harla, segunda ed., pp. 730--738.
+
+\bibitem[{Kuta \& Clark(2010)}]{Kuta2010}
+\textsc{Kuta, J. \& Clark, A.~E.} (2010).
+\newblock \emph{Inor. Chem.} \textbf{49}, 7808.
+
+\bibitem[{Moriarty \& Karlstr\"om(1997)}]{Mori1997}
+\textsc{Moriarty, N.~W. \& Karlstr\"om, G.} (1997).
+\newblock \emph{J. Chem. Phys.} \textbf{106}, 6470.
+
+\bibitem[{Ohtaki(1993)}]{Ohta1993}
+\textsc{Ohtaki, H.} (1993).
+\newblock \emph{Chem. Rev.} \textbf{93}, 1157.
+
+\bibitem[{Saint-Martin \emph{et~al.}(2000)Saint-Martin, Hern\'andez-Cobos,
+  Bernal-Uruchurtu, Ortega-Blake \& Berendsen}]{Sain2000}
+\textsc{Saint-Martin, H., Hern\'andez-Cobos, J., Bernal-Uruchurtu, M.~I.,
+  Ortega-Blake, I. \& Berendsen, H. J.~C.} (2000).
+\newblock \emph{J. Chem. Phys.} \textbf{113}, 10899.
+
+\bibitem[{Shrama \emph{et~al.}(2013)Shrama, B\"ohm, Seitz, Schwaab \&
+  Havenith}]{Shar2013}
+\textsc{Shrama, V., B\"ohm, F., Seitz, M., Schwaab, G. \& Havenith, M.} (2013).
+\newblock \emph{Phys. Chem. Chem. Phys.} \textbf{15}, 8383.
+
+\end{thebibliography}

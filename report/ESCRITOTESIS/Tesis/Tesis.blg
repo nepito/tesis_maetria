@@ -1,0 +1,78 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: Tesis.aux
+The style file: jtbnew.bst
+Database file #1: ../bibliografia2.bib
+Warning--empty title in Alex2005
+Warning--empty title in Bady2000
+Warning--empty title in Bunz2006
+Warning--empty title in Cao2001
+Warning--empty title in Cao2002
+Warning--empty title in Ciup2010
+Warning--empty title in Clou1973
+Warning--empty title in Cund1993
+Warning--empty title in Dang2012
+Warning--empty title in Dang2011
+Warning--empty title in Dolg2012
+Warning--empty title in Dolg1993
+Warning--empty title in Dolg1989
+Warning--empty title in Geer2003
+Warning--empty title in Grim2003
+Warning--empty title in Grim2012
+Warning--empty title in Helm2005
+Warning--empty title in Hern2005
+Warning--empty title in Hohe1964
+Warning--empty title in Jesk1985
+Warning--empty title in Kuta2010
+Warning--empty title in Moll1934
+Warning--empty title in Mori1997
+Warning--empty title in Ohta1993
+Warning--empty title in Olse1996
+Warning--empty title in Rao1989
+Warning--empty title in Sain2000
+Warning--empty title in Shar2013
+Warning--empty title in Dunn1989
+Warning--empty title in Toma2005
+Warning--empty title in Vill2009
+Warning--empty title in Yang2005
+You've used 38 entries,
+            2774 wiz_defined-function locations,
+            819 strings with 7438 characters,
+and the built_in function-call counts, 22182 in all, are:
+= -- 1736
+> -- 876
+< -- 27
++ -- 340
+- -- 300
+* -- 1815
+:= -- 3446
+add.period$ -- 82
+call.type$ -- 38
+change.case$ -- 257
+chr.to.int$ -- 38
+cite$ -- 70
+duplicate$ -- 1725
+empty$ -- 1712
+format.name$ -- 420
+if$ -- 4330
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 369
+newline$ -- 166
+num.names$ -- 152
+pop$ -- 824
+preamble$ -- 1
+purify$ -- 252
+quote$ -- 0
+skip$ -- 526
+stack$ -- 0
+substring$ -- 839
+swap$ -- 889
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 324
+warning$ -- 32
+while$ -- 150
+width$ -- 0
+write$ -- 440
+(There were 32 warnings)
